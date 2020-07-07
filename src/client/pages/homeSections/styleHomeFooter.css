@@ -1,0 +1,77 @@
+.foot1{
+ background-color: #00cccb;
+ margin-bottom: 0;
+ margin-top: 10px;
+ position: relative;
+}
+
+.logoKey{
+  width: 90px;
+  height: 80px;
+}
+
+.niveau1{
+	border-bottom: 1px solid #fff;
+}
+
+
+.colonne{
+	margin-top: 15px;
+	border-bottom: 1px solid #fff;;
+
+}
+
+
+.decouverte{
+	list-style: none;
+	display: block;
+}
+
+.decouverte li {
+	
+	
+	margin-left: 28%;
+}
+
+.decouverte li a{
+	color: #fff;
+}
+
+.aPropos{
+	list-style: none;
+	display: block;
+}
+
+.aPropos li {
+	
+	margin-left: 38%;
+}
+
+.aPropos li a{
+	color: #fff;
+}
+
+.social_footer_ul { 
+	display:table; 
+	margin:15px auto 0 auto; 
+	list-style-type:none; 
+	 }
+
+.social_footer_ul li {
+ padding-left:20px;
+  padding-top:10px;
+   float:left;
+    }
+
+.social_footer_ul li a { 
+	color:#CCC;
+	 border:1px solid #CCC; 
+	 padding:8px;
+	 border-radius:50%;
+	}
+
+.social_footer_ul li i {  
+	width:20px;
+	 height:20px; 
+	 text-align:center;
+	}

@@ -1,0 +1,45 @@
+.teamBordeaux {
+  font-family: "Montserrat", sans-serif;
+	color: #8d97ad;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.teamBordeaux h1, .teamBordeaux h2, .teamBordeaux h3, .teamBordeaux h4, .teamBordeaux h5, .teamBordeaux h6 {
+  color: #3e4555;
+}
+
+.teamBordeaux .font-weight-medium {
+	font-weight: 500;
+}
+
+.teamBordeaux h5 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.teamBordeaux .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+		font-size: 13px;
+}
+
+.teamBordeaux ul li a {
+  color: #8d97ad;
+  padding-right: 15px;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.teamBordeaux ul li a:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+	color: #316ce8;
+}
+
+.teamBordeaux img{
+  width: 90px;
+  height: 90px;
+}

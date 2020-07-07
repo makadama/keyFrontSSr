@@ -1,0 +1,27 @@
+
+.coordonnees{
+	display: block;
+	height: auto;
+
+}
+.townsData{
+	list-style: none;
+	display: block;
+
+}
+.coordonnees .townItem{
+	font-size: 22px;
+	padding-top: 5px;
+
+}
+ 
+.coordonnees .townItem .townsData li{
+	font-size: 15px;
+	margin-left: 30px;
+
+}
+
+.coordonnees .townItem .townsData{
+	height: auto;
+}
+

@@ -1,0 +1,67 @@
+.homeSection{
+    height: 500px;
+    background: url(https://i.pinimg.com/originals/92/11/34/9211348f010cc637153b5b208588e015.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    margin-top: 0;
+}
+   
+
+
+.homeInformation{
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+   
+
+
+.homeTitle{
+    font-size: 70px;
+    font-weight: bold;
+    color: #212F3D;
+  }
+
+    
+
+
+.homeInfo{
+    font-size: 45px;
+    color: #ed7e24;
+    font-weight: bold;
+    margin-bottom: 20px;
+} 
+
+.homeDesc{
+    font-size: 30px;
+    line-height: 1.5;
+    color: #273746;
+    margin-bottom: 20px;
+    width: 550px;
+     text-align: center;
+ }
+
+     
+
+
+.homeBtn{
+    background: #ed7e24;
+    color: #fff;
+    font-size: 18px;
+    width: 200px;
+    border: 0;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+   
+}
+
+.homeBtn:hover{
+    background: #fff;
+    color: #eb5424
+   
+}
+   

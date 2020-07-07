@@ -1,0 +1,45 @@
+.teamMarseille {
+  font-family: "Montserrat", sans-serif;
+	color: #8d97ad;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.teamMarseille h1, .teamMarseille h2, .teamMarseille h3, .teamMarseille h4, .teamMarseille h5, .teamMarseille h6 {
+  color: #3e4555;
+}
+
+.teamMarseille .font-weight-medium {
+	font-weight: 500;
+}
+
+.teamMarseille h5 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.teamMarseille .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+		font-size: 13px;
+}
+
+.teamMarseille ul li a {
+  color: #8d97ad;
+  padding-right: 15px;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.teamMarseille ul li a:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+	color: #316ce8;
+}
+
+.teamMarseille img{
+  width: 90px;
+  height: 90px;
+}

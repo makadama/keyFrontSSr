@@ -1,0 +1,50 @@
+.servicesSection{
+    height: 650px;
+    background: url(https://www.immobilier-patrimoine.fr/sites/all/files/field/image/gestion-locative-louer-appartement-neuf.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+   
+
+
+.servicesInformation{
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+   
+
+
+.servicesTitle{
+    font-size: 70px;
+    font-weight: bold;
+    color: #212F3D;
+  }
+
+    
+
+
+.servicesInfo{
+    font-size: 45px;
+    color: #ed7e24;
+    font-weight: bold;
+    margin-bottom: 20px;
+} 
+
+.servicesDesc{
+    font-size: 30px;
+    line-height: 1.5;
+    color: #273746;
+    margin-bottom: 20px;
+    width: 550px;
+     text-align: center;
+ }
+
+     
+.boxed-btn2{background:transparent;color:#fff;display:inline-block;padding:18px 24px;font-family:"Roboto",sans-serif;font-size:14px;font-weight:400;border:0;border:1px solid #fff;letter-spacing:2px;text-transform:uppercase}.boxed-btn2:hover{background:#ed7e24;color:#fff; text-decoration: none !important}.boxed-btn2:focus{outline:none}
+

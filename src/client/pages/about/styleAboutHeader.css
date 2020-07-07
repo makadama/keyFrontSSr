@@ -1,0 +1,53 @@
+.aboutSection{
+    height: 500px;
+    background: url(https://www.laconciergerie-odalys.com/wp-content/uploads/2018/11/header-la-concieregrie-by-odalys.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    margin-top: 0;
+}
+   
+
+
+.aboutInformation{
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+   
+
+
+.aboutTitle{
+    font-size: 70px;
+    font-weight: bold;
+    color: #212F3D;
+  }
+
+    
+
+
+.aboutInfo{
+    font-size: 45px;
+    color: #ed7e24;
+    font-weight: bold;
+    margin-bottom: 20px;
+} 
+
+.aboutDesc{
+    font-size: 30px;
+    line-height: 1.5;
+    color: #273746;
+    margin-bottom: 20px;
+    width: 550px;
+     text-align: center;
+ }
+
+     
+
+
+.aboutSection .boxed-btn2{background:transparent;color:#ed7e24;display:inline-block;padding:18px 24px;font-family:"Roboto",sans-serif;font-size:14px;font-weight:800;border:0;border:2px solid #ed7e24;letter-spacing:2px;text-transform:uppercase}.boxed-btn2:hover{background:#fff;color:#ed7e24; text-decoration: none !important}.boxed-btn2:focus{outline:none}
+
+
+   

@@ -1,0 +1,42 @@
+.partenaire{
+    height: auto;
+    background-color: #fff;
+    margin-top: 0;
+}
+
+.partTitle{
+    margin-bottom: 0;
+}
+
+.logo1{
+    width: 180px;
+    height: 92px;
+   
+}
+
+.logo2{
+   width: 180px;
+    height: 100px;
+   
+}
+
+
+.logo3{
+    width: 200px;
+    height: 110px;
+   
+}
+
+.logo{
+   margin-top: 0; 
+   padding-top: 0;
+   
+}
+
+.partTitle {
+    margin-top: 0;
+    font-size: 20px; 
+    text-align: center;
+    margin-bottom: 0;
+   
+}

@@ -1,0 +1,40 @@
+.grilleTowns{
+	background-color: #fff;
+	height: auto;
+
+	
+}
+
+
+
+.texteTowns{
+	text-align: center;
+	margin-top: 20px;
+    font-size: 20px;
+	padding: 0;
+}
+
+.btnsTowns{
+	background: #F4F6F6;
+    color: #eb5424;
+   margin-bottom: 10px;
+     border-left: none;
+     border-right: none;
+     border-bottom: 1px solid #eb5424;
+     border-top: 1px solid #eb5424;
+    padding: 3px;
+    padding-left: auto;
+    cursor: pointer;
+    
+    
+}
+
+.btnsTowns:hover{
+     background: #fff;
+    color: #eb5424
+    
+}
+
+
+
+
