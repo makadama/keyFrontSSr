@@ -5,6 +5,7 @@ const autoprefixer = require("autoprefixer");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
+    mode: webConfig.environment,
     // Tell webpack the root file of our
     // server application 
     entry:'./src/client/client.js',
@@ -67,10 +68,7 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin({
           filename: "public/css/[name].css"
-        }),
-        new CopyWebpackPlugin([
-            { from: 'src/client/assets/email_templates', to:  'public/media/email_templates' }
-        ])
+        })
   ]
 
 };

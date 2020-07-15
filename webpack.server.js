@@ -3,6 +3,7 @@ const webpackNodeExternals = require('webpack-node-externals');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
+    mode: webConfig.environment,
     // Inform webpack that we're building a bundle
     // for nodeJS, rather then for the browser
     target: 'node',
@@ -53,7 +54,11 @@ module.exports = {
         ]
     },
     
-
+    plugins: [
+        new CopyWebpackPlugin([
+            { from: 'src/client/assets/email_templates', to:  'public/media/email_templates' }
+        ])
+  ],
     // Tell webpack not to bundle any libraries that exist in the 'node_modules' folder
     // into the server bundle
     externals: [webpackNodeExternals()]

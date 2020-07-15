@@ -218,6 +218,7 @@ ul li a:hover{
 .homeSection{
     height: 500px;
     background: url(https://i.pinimg.com/originals/92/11/34/9211348f010cc637153b5b208588e015.png);
+    /*background-image: url("http://localhost:3000/media/appt4.jpg");*/
     background-size: cover;
     background-position: center;
     text-align: center;
