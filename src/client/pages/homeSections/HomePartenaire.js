@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './styleHomePartenaire.css';
-import logoAirbnb from '../../assets/airbnb3.PNG';
-import logoAbritel from '../../assets/abritel3.PNG';
-import logoBooking from '../../assets/booking3.PNG';
+import logoAirbnb from '../../assets/airbnb3.jpg';
+import logoAbritel from '../../assets/abritel3.jpg';
+import logoBooking from '../../assets/booking3.jpg';
 
 
 
