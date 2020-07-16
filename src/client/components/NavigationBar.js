@@ -12,6 +12,15 @@ class NavigationBar extends Component{
 
 		this.handleClick=this.handleClick.bind(this)
 	}
+
+  const authButton = auth ? (
+    <li><a href="/api/api/auth/signout">Logout</a></li>
+  ) : (
+    <li><a href="/login" className="btn btn_login">Se connecter</a></li>
+    <li><a href="/register" className="btn btn_register">S'inscrire</a></li>
+  );
+
+
 	handleClick(){
 		this.setState({
 			isOpen: !this.state.isOpen
@@ -39,12 +48,15 @@ render(){
       		<li><a href="/villes">Nos Villes</a></li>
       </ul>
       <ul  className={this.state.isOpen? 'showNav': 'undif'}>
-      		<li><a href="/login" className="btn btn_login">Se connecter</a></li>
-      		<li><a href="/register" className="btn btn_register">S'inscrire</a></li>
-      		
+      		{authButton}
       </ul>
     </nav>
   )
 }
 };
-export default NavigationBar;
+function mapStateToProps({ auth }) {
+  return { auth };
+}
+
+export default connect(mapStateToProps)(NavigationBar);
+

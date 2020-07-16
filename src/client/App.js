@@ -4,6 +4,7 @@ import NavBar from './components/NavigationBar';
 import HomeFooter from './pages/homeSections/HomeFooter';
 import { fetchCurrentUser } from './actions/authActions';
 
+
 const App = ({ route }) => {
   return (
     <div>

@@ -37,7 +37,7 @@ export default (req, store, context) => {
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"/>
       </head>
-      <body>
+      <body ${helmet.bodyAttributes.toString()}>
         <div id="root">${content}</div>
         <script>
           window.INITIAL_STATE = ${serialize(store.getState())}
