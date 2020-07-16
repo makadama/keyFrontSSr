@@ -5,7 +5,7 @@ const autoprefixer = require("autoprefixer");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    mode: webConfig.environment,
+    
     // Tell webpack the root file of our
     // server application 
     entry:'./src/client/client.js',

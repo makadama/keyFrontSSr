@@ -1,9 +1,10 @@
 const path = require('path');
 const webpackNodeExternals = require('webpack-node-externals');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webConfig = require('./webConfig');
 
 module.exports = {
-    mode: webConfig.environment,
+   
     // Inform webpack that we're building a bundle
     // for nodeJS, rather then for the browser
     target: 'node',
