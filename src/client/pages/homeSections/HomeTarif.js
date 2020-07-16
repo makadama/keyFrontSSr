@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './styleHomeTarif.css';
+import './StyleHomeTarif.css';
 
 
 

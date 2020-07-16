@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './StyleAllServices.css';
-import  annonce from  '../../assets/annonce.png';
+import  annonce from  '../../assets/Annonce.png';
 import checkin from '../../assets/checkin.png';
 import communication from  '../../assets/communication.jpg';
 import menage from  '../../assets/menage.png';
