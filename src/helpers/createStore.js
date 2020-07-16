@@ -6,7 +6,7 @@ import webConfig from './../../webConfig';
 
 export default req => {
   const axiosInstance = axios.create({
-    baseURL: 'http://localhost:8080',
+    baseURL: 'https://ks-backend.herokuapp.com',
     headers: { cookie: req.get('cookie') || '' }
   });
 
