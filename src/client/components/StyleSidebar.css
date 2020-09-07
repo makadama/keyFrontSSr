@@ -1,0 +1,102 @@
+/*.sidebarContainer{
+	margin-top: 110px;
+	position: relative;
+	
+}
+
+.sidebar{
+	
+	width: 250px;
+	height: 100%;
+	background: #042331;
+}
+
+.sidebar header{
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	line-height: 70px;
+	background: #063146;
+	user-select: none;
+}
+
+.sidebar ul a{
+	display: block;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	color: white;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid black;
+	text-decoration: none;
+	transition: .4s;
+}
+
+.sidebar ul li:hover a{
+	padding-left: 50px;
+}
+
+.sidebar ul  a i{
+	margin-right: 16px;
+}
+ 
+#check{
+	display: none;
+}
+
+.boutonSide, .btnc{
+	position: absolute;
+	cursor: pointer;
+	background: #042331;
+	border-radius: 3px;
+}
+
+.boutonSide{
+	left: 10px;
+	top: 17px;
+	font-size: 35px;
+	color: white;
+	padding: 6px 12px;
+}
+
+.btnc{
+	z-index: 999;
+	left: 195px;
+	top: 17px;
+	font-size: 30px;
+	color: #0a5275;
+	padding: 4px 9px;
+}
+
+*/
+
+.sidebar{
+	margin-top: 100px;
+	width: 200px;
+	height: 100%;
+	background: #151579;
+}
+
+.sidebar ul li {
+	color:rgba(230,230,230,0.9);
+	list-style: none;
+	padding: 15px 10px;
+	border-bottom: 1px  solid rgba(100,100,100,0.3);
+
+}
+
+.sidebar .toggle-btn{
+	left: 230px;
+	
+}
+
+.sidebar .toggle-btn span{
+	display: block;
+	width: 30px;
+	height: 5px;
+	background: #151719;
+	margin: 5px 0px;
+
+}

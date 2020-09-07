@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { fetchCurrentUser } from '../actions/authActions';
+import { connect } from 'react-redux';
 import logo from '../assets/keyLogo_last.jpg';
 import './NavigationBar.css';
 
@@ -13,13 +15,7 @@ class NavigationBar extends Component{
 		this.handleClick=this.handleClick.bind(this)
 	}
 
-  const authButton = auth ? (
-    <li><a href="/api/api/auth/signout">Logout</a></li>
-  ) : (
-    <li><a href="/login" className="btn btn_login">Se connecter</a></li>
-    <li><a href="/register" className="btn btn_register">S'inscrire</a></li>
-  );
-
+ 
 
 	handleClick(){
 		this.setState({
@@ -27,8 +23,38 @@ class NavigationBar extends Component{
 		})
 	}
 
+  renderPage(){
+     if (this.props.auth) {
+     if (this.props.auth.type === "hote") {
+      return "/dashboardHote";
+      }
+      if(this.props.auth.type === "voyageur"){
+        return "/dashboardVoyageur";
+    }
+      
+      
+    }
+  }
+
+
+
 render(){
+   
+   const authButton = this.props.auth ? (
+    <ul className={this.state.isOpen? 'showNav': 'undif'}>
+       <li><a href={this.renderPage()}  style={{color:'#ed7e24',fontWeight: 'bold'}}><i class="fa fa-user"></i>     {this.props.auth.firstname}</a></li>
+       <li><a href="/api/api/auth/signout"><i class="fa fa-power-off"> se deconnecter</i></a></li>  
+    </ul>
+  ) : (
+    <ul className={this.state.isOpen? 'showNav': 'undif'}>
+      <li><a href="/login" className="btn btn_login">Se connecter</a></li>
+      <li><a href="/register" className="btn btn_register">S'inscrire</a></li>
+    </ul>
+  );
+
+
   return (
+    <div className="nvbr">
     <nav>
       <div className="logoBtn">
       	<div className="logo">
@@ -47,16 +73,19 @@ render(){
       		<li><a href="/services">Nos Services</a></li>
       		<li><a href="/villes">Nos Villes</a></li>
       </ul>
-      <ul  className={this.state.isOpen? 'showNav': 'undif'}>
-      		{authButton}
-      </ul>
+      {authButton}
     </nav>
+    </div>
   )
 }
 };
-function mapStateToProps({ auth }) {
-  return { auth };
-}
+const mapStateToProps = state => ({
+  auth: state.auth
+});
 
-export default connect(mapStateToProps)(NavigationBar);
+
+
+export default connect(mapStateToProps)(NavigationBar)
+
+
 

@@ -19,7 +19,7 @@ class  MainTown extends Component {
     <div class="row mb-3 ">
      
       <div class="col-lg-6 mb-3 mb-lg-0">
-        <a href="/ville/paris"><div class="hover hover-5 text-white rounded"><img src={paris} alt=""/>
+        <a href="/ville/paris"><div class="hover hover-5 text-white rounded"><img src='media/paristown2.jpg' alt=""/>
           <div class="hover-overlay"></div>
           <div class="hover-5-content">
             <h3 class="hover-5-title text-uppercase font-weight-light mb-0">PARIS<strong class="font-weight-bold text-white"></strong><span></span></h3>

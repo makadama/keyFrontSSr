@@ -1,0 +1,41 @@
+.grid-container{
+	display: grid;
+	grid-template-areas: "header"
+	"main";
+	grid-template-rows: 5rem 1fr 5rem;
+	grid-template-columns: 1fr;
+}
+
+header{
+	grid-area: header;
+	background-color: #17202a;
+	color: #ffffff;
+	text-align: center;
+}
+
+header a{
+	color: #fff;
+	font-size: 30px;
+}
+
+header 	a:hover{
+	color: #ed7e24;
+	text-decoration: none;
+}
+
+main{
+	grid-area: main;
+}
+
+.content{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.content .main{
+	flex: 3 60rem;
+}
+
+.content .sidebar{
+	flex: 1 20rem;
+}

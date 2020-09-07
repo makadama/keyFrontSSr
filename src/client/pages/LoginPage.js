@@ -33,10 +33,12 @@ class LoginPage extends Component{
 	componentDidMount() {
     // If logged in and user navigates to Register page, should redirect them to dashboard
     if (this.props.auth) {
-
-     
-        this.props.history.push("/dashboardHote");
-      
+		 if (this.props.auth.type === "hote") {
+			this.props.history.push("/dashboardHote");
+    	}
+    	if(this.props.auth.type === "voyageur"){
+    		this.props.history.push("/dashboardVoyageur");
+    }
       
       
     }
@@ -45,9 +47,14 @@ class LoginPage extends Component{
 
 	  componentWillReceiveProps(nextProps) {
 	  	 if (nextProps.auth) {
+				if (nextProps.auth.type === "hote") {
+			    		this.props.history.push("/dashboardHote");
+			    }
+			    if(nextProps.auth.type === "voyageur") {
+			    		this.props.history.push("/dashboardVoyageur");
+			    }
 
-    	
-    		this.props.history.push("/dashboardHote");
+
     
       
     }
@@ -103,6 +110,7 @@ class LoginPage extends Component{
 					  onChange={this.onChange}
 
                 	/>
+                	
 		                <span className="red-text">
 		                  {errors.email}
 		                  {errors.emailnotfound}

@@ -3,12 +3,15 @@ import thunk from 'redux-thunk';
 import axios from 'axios';
 import reducers from '../client/reducers';
 import webConfig from './../../webConfig';
+import {persistStore} from 'redux-persist';
+
 
 export default req => {
   const axiosInstance = axios.create({
-    baseURL: 'https://ks-backend.herokuapp.com',
+    baseURL: 'http://localhost:8080',
     headers: { cookie: req.get('cookie') || '' }
   });
+
 
   const store = createStore(
     reducers,

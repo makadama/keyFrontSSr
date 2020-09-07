@@ -3,6 +3,8 @@
 	width: 110px;
 }
 
+
+
 .bar{
 	width: 30px;
 	margin: 4px;
@@ -20,11 +22,24 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid #ed7e24;
+	border-bottom: 1px solid #fff;
 
 }
 
-ul{
+nav{
+		
+		
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1000;
+		background-color: #fff;
+
+
+
+	}
+
+nav ul{
 	list-style: none;
 	padding: 0 0;
 	height: 0px;
@@ -37,7 +52,9 @@ ul{
 	height: 182px;
 }
 
-ul li a{
+
+
+nav ul li a{
 	display: block;
 	color: #000;
 	padding: 10px;
@@ -46,13 +63,14 @@ ul li a{
 	font-size: 18px;
 }
 
-ul li a:hover{
+nav ul li a:hover{
 	background: #00cccb;
 	color: #ed7e24;
 	text-decoration: none;
 	padding-left: 20px;
 
 }
+
 
 @media screen and (min-width:760px){
 	.btn_login{
@@ -82,13 +100,20 @@ ul li a:hover{
 		align-items: center;
 		padding: 0 20px;
 		border-bottom: 1px solid #000;
+		height: 100px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1000;
+		background-color: #fff;
+		margin-bottom: 0;
 
 
 	}
 	.bouton{
 		display: none;
 	}
-	ul{
+	nav ul{
 		display: flex;
 		height: auto;
 }
@@ -108,11 +133,25 @@ ul li a:hover{
 		border: none;
 	}
 
-ul li a:hover{
+nav ul li a:hover{
 	background: none;
 	color: #ed7e24;
 	padding-left: 10px;
 	
+}
+
+nav ul li ul{
+	display: none;
+	padding: 0;
+	margin: 0;
+	height: auto;
+
+}
+
+nav ul li:hover ul{
+	padding:0;
+	display: block;
+
 }
 
 .btn_login:hover{
@@ -133,6 +172,8 @@ ul li a:hover{
 		color: #fff;
 
 	}
+
+
 
 
 

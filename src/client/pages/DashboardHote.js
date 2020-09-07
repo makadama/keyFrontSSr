@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Helmet } from 'react-helmet';
 import { connect } from "react-redux";
 import { Link, withRouter } from 'react-router-dom';
 import { logoutUser } from "../actions/authActions";
 import requireAuth from '../components/hocs/requireAuth';
 import { fetchCurrentUser } from '../actions/authActions';
-
+import './styleDashboardHote.css';
 
 class DashboardHote extends Component {
   constructor(){
@@ -13,7 +14,13 @@ class DashboardHote extends Component {
     this.onLogoutClick=this.onLogoutClick.bind(this)
   }
 
-  
+  head(){
+        return(
+            <Helmet>
+                <title> Mon compte - Keyservice Conciergerie </title>
+            </Helmet>
+            );
+    }
 
   onLogoutClick(e){
     e.preventDefault();
@@ -24,29 +31,49 @@ class DashboardHote extends Component {
   render() {
          const { firstname } = this.props.auth;
          const { errors } = this.props.errors;
+         const { id } = this.props.auth;
          
     return (
-      
+    <div style={{top:'100px'}} className="dash">  
+      {this.head()}
+    <div className="container-fluid ">
+      <div className="row">
+        <div className="col-lg-12 col-md-12">
+            <div className="jumbotron jumbotron-fluid text-center">
+                <h1>bonjour, {firstname}</h1>
+                <p className="lead"> Bienvenue dans votre espace membre</p>
+            </div>
+        </div>
+      </div>
+      <div class="row ">
+            <div class="col-lg-6 col-md-6 d-flex justify-content-center " >
+                <div class="card-box bg-blue ">
+                    <div class="inner ">
+                        <h3> Mes biens </h3>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </div>
+                    <a href={`/dashboardHote/${id}/mes-biens`} class="card-box-footer">Voir <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
 
-      <div className="jumbotron text-center">
-           Hello, {firstname}
-  <p className="lead"> You are logged in as a host  on key service</p>
-          <button
-              style={{
-                width: "150px",
-                borderRadius: "3px",
-                letterSpacing: "1.5px",
-                marginTop: "1rem"
-              }}
-              onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-            >
-              Logout
-          </button>
-          <a href="/logementsListPage"> mes logements </a>
-  
-</div>
-     
+            <div class="col-lg-6 col-md-6 d-flex justify-content-center">
+                <div class="card-box bg-green">
+                    <div class="inner">
+                        <h3> Mon profil </h3>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                    <a href={`/dashboardHote/${id}/mon-profil`} class="card-box-footer">Voir <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            
+            
+        </div>
+     </div>
+    </div>
     );
   }
 }

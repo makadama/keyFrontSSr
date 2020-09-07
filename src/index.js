@@ -8,23 +8,27 @@ import createStore from './helpers/createStore';
 import bodyParser from 'body-parser';
 import webConfig from './../webConfig';
 
+
+
 const port = process.env.PORT || 3000;
 const app = express();
 
 app.use(
   '/api',
-  proxy("https://ks-backend.herokuapp.com"));
+  proxy("http://localhost:8080"));
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('*', (req, res) => {
+app.get(['/*/:param/*/:param2/*','/*/:param/*/:param2','/*/:param/*','/*/:param', '*'], (req, res) => {
+  const ParamValue = req.params.param ? req.params.param : null;
+  const ParamValue2 = req.params.param2 ? req.params.param2 : null;
   const store = createStore(req);
 
   const promises = matchRoutes(Routes, req.path)
     .map(({ route }) => {
-      return route.loadData ? route.loadData(store) : null;
+      return route.loadData ? route.loadData(store, ParamValue, ParamValue2) : null;
     })
     .map(promise => {
       if (promise) {
