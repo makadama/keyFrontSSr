@@ -7,7 +7,7 @@ class IndexFooter extends  Component{
 
     return(
       
-        <div className="container-fluid foot1  mt-5 ">
+        <div className="container-fluid foot1 ">
           <div className="row niveau1 d-flex justify-content-center">
             <div className="col-md-12 text-center">
               <img className="hidden-xs img-block logoKey" src={logo}/>          

@@ -13,7 +13,7 @@ export const getOneCommande = (commandeId) => async (dispatch, getState, api) =>
 	}catch(error){
 		dispatch({
         type: GET_ERRORS,
-        payload: err
+        payload: error
       })
 	}	
 };
@@ -41,7 +41,7 @@ export const updateCommande = (commandeId, commandeData) => async(dispatch, getS
   
  const res= await api.put(`/api/commande/${commandeId}`, commandeData)
    
-    dispatch(getOneCommande(res.data.fk_voyageur));
+    dispatch(getOneCommande(commandeId));
 
   }catch(err){
       dispatch({
@@ -98,6 +98,37 @@ export const updateByTotal = (commandeId,  someData) => async(dispatch, getState
       isPaid: res.data.isPaid,
       paidAt: res.data.paidAt,
       total : someData,
+      fk_voyageur : res.data.fk_voyageur
+  }
+ dispatch(updateCommande(commandeId, newCommandeData));
+
+  }catch(err){
+      dispatch({
+        type: GET_ERRORS,
+        payload: err.response.data
+      })
+  }
+}
+
+
+
+
+export const finalUpdate= (commandeId) => async(dispatch, getState, api)=>{
+  try{
+  
+  const res = await api.get(`/api/commande/${commandeId}`);
+  const newCommandeData ={
+      adresse: res.data.adresse,
+      codePostal: res.data.codePostal,
+      nom: res.data.nom,
+      email: res.data.email,
+      numero: res.data.numero,
+      ville: res.data.ville,
+      modePaiement: res.data.modePaiement,
+      taxe: res.data.taxe,
+      isPaid: true,
+      paidAt: Date.now(),
+      total : res.data.total,
       fk_voyageur : res.data.fk_voyageur
   }
  dispatch(updateCommande(commandeId, newCommandeData));

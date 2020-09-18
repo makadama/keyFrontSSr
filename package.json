@@ -19,6 +19,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
+    "antd": "^4.6.3",
     "autoprefixer": "^9.7.6",
     "axios": "0.16.2",
     "babel-cli": "6.26.0",

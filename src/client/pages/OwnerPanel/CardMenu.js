@@ -49,7 +49,7 @@ class CardMenu extends Component {
                     <div class="icon">
                         <i class="fa fa-image" aria-hidden="true"></i>
                     </div>
-                    <a href={`/dashboardHote/${id}/mes-biens/${logement.id}/images`} class="card-box-footer">Voir <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href={`/dashboardHote/${id}/mes-biens/${logement.id}/upload`} class="card-box-footer">Voir <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             

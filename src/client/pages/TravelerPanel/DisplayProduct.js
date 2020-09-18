@@ -34,7 +34,7 @@ onChange (e){
 		}
 
 
-	componentDidMount(){
+componentDidMount(){
 			this.props.getProduitById(this.props.match.params.idProduct)
 	}
 

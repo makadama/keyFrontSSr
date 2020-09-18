@@ -6,6 +6,7 @@ import LoginPage from './pages/LoginPage';
 import LoginAfterRegister from './pages/LoginAfterRegister';
 import DashboardHote from './pages/DashboardHote';
 import NotFoundPage from './pages/NotFoundPage';
+import AccordionIndex from './pages/faq/AccordionIndex';
 import LogementsListPage from './pages/LogementsListPage';
 import TownPage from "./pages/TownPage";
 import ParisPage from './pages/towns/paris/IndexParis';
@@ -16,11 +17,13 @@ import ContactPage from './pages/ContactPage';
 import ServicePage from './pages/services/IndexServicePage';
 import AboutPage from './pages/about/IndexAboutPage';
 import TestPage from './pages/TestPage';
+import SimulationPage from './pages/simulation/SimulationPage';
 import OwnerLayout from './components/Layouts/OwnerLayout';
 import AddLogementPage from './pages/OwnerPanel/AddLogementPage';
 import LogementDetailsPage from './pages/OwnerPanel/LogementDetailsPage';
 import LogementAvailability from './pages/OwnerPanel/LogementAvailability';
 import MyTarif from './pages/OwnerPanel/MyTarif';
+import UploadImage from './pages/OwnerPanel/UploadImage';
 import UserProfil from './pages/OwnerPanel/UserProfil';
 import DashboardVoyageur from './pages/TravelerPanel/DashboardVoyageur';
 import RentInfosPage from './pages/TravelerPanel/RentInfosPage';
@@ -32,6 +35,8 @@ import ExpeditionPage from './pages/TravelerPanel/ExpeditionPage';
 import ChoixPaiementPage from './pages/TravelerPanel/ChoixPaiementPage';
 import DisplayCommandePage from './pages/TravelerPanel/DisplayCommandePage';
 import PlaceOrder from './pages/TravelerPanel/PlaceOrder';
+import SuccessOrder from './pages/TravelerPanel/SuccessOrder';
+
 
 export default [
   {
@@ -115,6 +120,24 @@ export default [
         }
     ]
   },
+   {
+    path:'/simulation',
+    ...App,
+    routes:[
+        {
+          ...SimulationPage
+        }
+    ]
+  },
+  {
+    path:'/faq',
+    ...App,
+    routes:[
+        {
+          ...AccordionIndex
+        }
+    ]
+  },
   {
     path:'/services',
     ...App,
@@ -164,6 +187,10 @@ export default [
           ...LogementAvailability
         },
          {
+          path:'/dashboardHote/:idUser/mes-biens/:id/upload',
+          ...UploadImage
+        },
+         {
           path:'/dashboardHote/:idUser/mes-biens/:id',
           ...LogementDetailsPage
         },
@@ -203,6 +230,10 @@ export default [
          {
           path:'/dashboardVoyageur/:idUser/commande/:idCommande/mode-paiement',
           ...ChoixPaiementPage
+        },
+        {
+          path:'/dashboardVoyageur/:idUser/commande/succes',
+          ...SuccessOrder
         },
         {
           path:'/dashboardVoyageur/:idUser/produits/:idProduct',

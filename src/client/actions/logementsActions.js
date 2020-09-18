@@ -76,3 +76,17 @@ export const updateLogement = (logementId, logementData, history) => async (disp
 	}
 
 }
+
+export const uploadLogementImage = (logementData) => async (dispatch, getState, api) =>{
+	try{
+		const res = await  api.post("/api/upload", logementData);
+		if(res){
+			console.log(res.data);
+		}
+		
+
+	}catch(error){
+		console.log(error);
+	}
+
+}
