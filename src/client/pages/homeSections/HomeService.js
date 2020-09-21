@@ -15,6 +15,7 @@ class HomeService extends Component {
             <div className="col">
                 <div className="al-services-header text-center">
                     <h2>Nos services</h2>
+                    <div class="seperator2"></div>
                     <p>Keyservice se chargera de vos biens et de vos locatiares</p>
                 </div>
             </div>

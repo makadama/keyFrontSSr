@@ -12,6 +12,7 @@ import productReducer from './productReducer';
 import cartReducer	from './cartReducer';
 import commandeItemReducer from './commandeItemReducer';
 import commandeReducer from './commandeReducer';
+import simulationReducer from './simulationReducer';
 
 export default combineReducers({
   auth: authReducer,
@@ -26,5 +27,6 @@ export default combineReducers({
   products: productReducer,
   cart: cartReducer,
   commandeItems: commandeItemReducer,
-  commande: commandeReducer
+  commande: commandeReducer,
+  simulation: simulationReducer
 });

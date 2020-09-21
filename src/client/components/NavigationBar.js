@@ -47,8 +47,8 @@ render(){
     </ul>
   ) : (
     <ul className={this.state.isOpen? 'showNav': 'undif'}>
-      <li><a href="/login" className="btn btn_login">Se connecter</a></li>
-      <li><a href="/register" className="btn btn_register">S'inscrire</a></li>
+      <li><a href="/connexion" className="btn btn_login">Se connecter</a></li>
+      <li><a href="/inscription" className="btn btn_register">S'inscrire</a></li>
     </ul>
   );
 

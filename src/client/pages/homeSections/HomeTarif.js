@@ -14,6 +14,7 @@ class HomeTarif extends Component {
             <div class="container">
                 <div class="section-header text-center">
                     <h2 class="section-title">Nos Offres</h2>
+                    <div class="seperator2"></div>
                     <div class="line">
                         <span></span>
                     </div>

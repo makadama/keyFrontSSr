@@ -40,7 +40,7 @@ import SuccessOrder from './pages/TravelerPanel/SuccessOrder';
 
 export default [
   {
-    path:'/register',
+    path:'/inscription',
     ...App,
     routes:[
         {
@@ -49,7 +49,7 @@ export default [
     ]
   },
   {
-    path:'/login',
+    path:'/connexion',
     ...App,
     routes:[
         {

@@ -16,11 +16,14 @@ class Mission extends Component {
                     <div class="section_title padding-right">
                         <h3>Notre Mission</h3>
                         <div class="seperator2"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                            viverra maecenas accumsan lacus vel facilisis. </p>
+                        <p>Keyservice offre une gestion clé en main de vos
+                         locations saisonnières en s’occupant de toute la logistique liée à la location
+                          Airbnb (ménage, accueil des voyageurs, maintenance…) et en maximisant vos revenus.
+                          Notre atout numéro 1 reste son désir, son devoir même auprès de ses clients - qu’ils
+soient de simples particuliers ou bien de grandes entreprises - de conserver le
+côté “chaleureux/cozy” et “authentique” qui se perd trop souvent lorsqu’on délaisse la gestion de son “chez-soi” à une entreprise. </p>
                         <div class="mission_contact">
-                            <a href="#" class="boxed-btn large-width">Nous Contacter</a>
+                            <a href="/contact" class="boxed-btn large-width">Nous Contacter</a>
                         </div>
                     </div>
                 </div>

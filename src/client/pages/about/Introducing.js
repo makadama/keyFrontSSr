@@ -24,7 +24,7 @@ class Introducing extends Component {
                     <div class="about_thumb">
                         <img src={mission} alt=""/>
                         <div class="exprience">
-                            <h1>5</h1>
+                            <h1>3</h1>
                             <span>ans  d'experience</span>
                         </div>
                     </div>
@@ -36,14 +36,12 @@ class Introducing extends Component {
                             <h3> Historique </h3>
                             <div class="seperator2"></div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                            viverra maecenas accumsan lacus vel facilisis. </p>
-                        <ul class="about_list">
-                            <li>Consectetur adipiscing sed do eiusmod. </li>
-                            <li>Eiusmod tempor incididunt labore. </li>
-                        </ul>
-                        <a href="#" class="boxed-btn">Nous Contacter</a>
+                        <p>KEYSERVICES est un acteur relativement récent du monde de la conciergerie ayant
+démarré son activité il y a 3 ans (créé le 15 janvier 2017), pourtant il comptabilise
+déjà presque cent clients dans 4 villes de France (Paris, Bordeaux, Lyon, Marseille). Groomlidays met à votre disposition une conciergerie Airbnb
+ et vous met en relation avec des concierges dédiés à la gestion de votre location de vacances </p>
+                       
+                        <a href="/contact" class="boxed-btn">Nous Contacter</a>
                     </div>
                 </div>
             </div>
