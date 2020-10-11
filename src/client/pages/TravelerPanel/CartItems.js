@@ -4,7 +4,7 @@ import { getCommandeItem, deleteCommandeItem, updateByQt, updateCommandeItem  } 
 import { getRentByUser } from '../../actions/rentActions';
 import symbol from  '../../utils/symbol';
 import { Link } from 'react-router-dom';
-import './styleCartItems.css';
+import './cartItemsStyle.css';
 
 class CartItems extends Component{
   constructor(){
