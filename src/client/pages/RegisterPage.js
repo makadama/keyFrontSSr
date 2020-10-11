@@ -76,7 +76,7 @@ class RegisterPage extends Component{
 	 render() {
     const { errors } = this.state;
     return (
-      <div>
+      <div style={{marginTop:'100px', marginBottom:'1px', height:'auto'}}>
         {this.head()}
       <div className="container">
         <div className="row">
@@ -84,18 +84,18 @@ class RegisterPage extends Component{
            <p className="text-center">
                     {errors.message ? <span className="alert alert-danger" style={{width:'auto'}}>{errors.message} </span>:''}
                 </p>
-              <h1 className="h3 mb-3 font-weight-normal">Register</h1>
-             
+              <h1 className="h3 mb-3 font-weight-normal">S'inscrire</h1>
+             <div className="seperator2"></div>
             <form noValidate onSubmit={this.onSubmit}>
 
 
               	<div className="form-group">
-                <label htmlFor="email">Email address</label>
+                <label htmlFor="email">Adresse email</label>
                 <input
                   id="email"
                   type="text"
                   name="email"
-                  placeholder="Enter email"
+                  placeholder="Entrer votre adresse email"
                   className={classnames("form-control",{
                       invalid: errors.email
                     })}
@@ -108,12 +108,12 @@ class RegisterPage extends Component{
               	</div>
 
                  <div className="form-group">
-                <label htmlFor="firstname">First name</label>
+                <label htmlFor="firstname">Prénom</label>
                 <input
                   id="firstname"
                   type="text"
                   name="firstname"
-                  placeholder="Enter your first name"
+                  placeholder="Entrer votre prénom"
                   className={classnames("form-control",{
                       invalid: errors.firstname
                     })}
@@ -126,12 +126,12 @@ class RegisterPage extends Component{
               </div>
 
               <div className="form-group">
-                <label htmlFor="lastname">Last name</label>
+                <label htmlFor="lastname">Nom</label>
                 <input
                   id="lastname"
                   type="text"
                   name="lastname"
-                  placeholder="Enter your last name"
+                  placeholder="Entrer votre nom"
                   className={classnames("form-control",{
                       invalid: errors.lastname
                     })}
@@ -149,7 +149,7 @@ class RegisterPage extends Component{
                   id="adress"
                   type="text"
                   name="adress"
-                  placeholder="Enter your last address"
+                  placeholder="Entrer votre adresse"
                   className={classnames("form-control",{
                       invalid: errors.adress
                     })}
@@ -167,7 +167,7 @@ class RegisterPage extends Component{
                   id="telephone"
                   type="text"
                   name="telephone"
-                  placeholder="Enter your phone number"
+                  placeholder="Entrer votre numéro"
                   className={classnames("form-control",{
                       invalid: errors.telephone
                     })}
@@ -181,12 +181,12 @@ class RegisterPage extends Component{
 
 
               <div className="form-group">
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">mot de passe</label>
                 <input
                   id="password"
                   type="password"
                   name="password"
-                  placeholder="Password"
+                  placeholder="mot de passe"
                   className={classnames("form-control",{
                       invalid: errors.password
                     })}
@@ -199,12 +199,12 @@ class RegisterPage extends Component{
               </div>
 
               <div className="form-group">
-                <label htmlFor="password2">Password confirmation</label>
+                <label htmlFor="password2">confirmer votre mot de passe</label>
                 <input
                   id="password2"
                   type="password"
                   name="password2"
-                  placeholder="confirm your password"
+                  placeholder="mot de passe"
                   className={classnames("form-control",{
                       invalid: errors.password2
                     })}

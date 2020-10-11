@@ -19,7 +19,7 @@ class IndexAboutPage extends Component {
   render() {
     return (
        
-         <div>
+         <div data-test="aboutPageComponent"  style={{marginTop:'100px', marginBottom:'1px', height:'auto'}}>
             {this.head()}
             <AboutHeader/>
             <Introducing/>

@@ -13,12 +13,12 @@ class IndexServicePage extends Component{
     }
 	render(){
 		return(
-			<div>
+			<div data-test="servicePageComponent">
 				 {this.head()}
 				<ServicesHeader/>
 				<AllServices/>
 			</div>
-			)
+			);
 	}
 }
 export default {

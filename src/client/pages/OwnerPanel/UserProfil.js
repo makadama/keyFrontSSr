@@ -24,7 +24,8 @@ class UserProfil extends Component {
       adress: "",
       telephone: "",
       type: "",
-      errors:{}
+      errors:{}, 
+      success: false
 		}
 
 		this.onChange=this.onChange.bind(this)
@@ -57,17 +58,25 @@ class UserProfil extends Component {
   }*/
 
  componentWillReceiveProps(nextProps){
+     if (nextProps.errors) {
+      this.setState({
+        errors: nextProps.errors
+      });
+    }
     this.setState({
       email: nextProps.user.email,
       firstname: nextProps.user.firstname,
       lastname: nextProps.user.lastname,
       adress: nextProps.user.adress,
       telephone: nextProps.user.telephone,
-       errors: nextProps.errors
-      
+      success:  nextProps.success
     });
+
+   
+
   }
 
+ 
 		onChange (e){
 		this.setState({[e.target.name]:e.target.value})
 		}
@@ -83,7 +92,7 @@ class UserProfil extends Component {
       telephone: this.state.telephone,
       type: this.props.auth.type
 }
-    this.props.updateUser(this.props.auth.id, userInfo);
+    this.props.updateUser(this.props.auth.id, userInfo)
 		
 		}
 
@@ -100,7 +109,7 @@ onSubmitPassword(e){
       telephone: this.props.user.telephone,
       type: this.props.auth.type
 }
-    this.props.updateUser(this.props.auth.id, userInfo);
+    this.props.updateUser(this.props.auth.id, userInfo)
 }
 
    
@@ -114,8 +123,9 @@ onSubmitPassword(e){
 
       const { user } =  this.props;
       console.log(user);
+
+      const {success} = this.state;
      
-     const { success } = this.state;
 
 
    
@@ -151,33 +161,53 @@ onSubmitPassword(e){
                         
                             <div className="form-group">
                               <label for="email">email</label>
-                              <input type="text" name="email"  id="email"  className="form-control"
+                              <input type="text" name="email"  id="email"  className={classnames("form-control",{
+                                  invalid: errors.email
+                                })}
                                 value={this.state.email}
-                                onChange={this.onChange} />    
+                                onChange={this.onChange} />  
+                              <span className="red-text" style={{color:'red'}}>
+                                  {errors.email}  
+                              </span>  
                             </div>
                             
 
                             <div className="form-group">
                               <label for="firstname">Prénom</label>
-                              <input type="text" name="firstname"  id="firstname"  className="form-control"
+                              <input type="text" name="firstname"  id="firstname"  className={classnames("form-control",{
+                                  invalid: errors.firstname
+                                })}
                                 value={this.state.firstname}
-                                onChange={this.onChange} disabled />    
+                                onChange={this.onChange} disabled />  
+                                 <span className="red-text" style={{color:'red'}}>
+                                  {errors.firstname}  
+                              </span>    
                             </div>
 
                              
 
                             <div className="form-group">
                               <label for="lastname">Nom</label>
-                              <input type="text" name="lastname"  id="lastname"  className="form-control"
+                              <input type="text" name="lastname"  id="lastname"  className={classnames("form-control",{
+                                  invalid: errors.lastname
+                                })}
                                 value={this.state.lastname}
-                                onChange={this.onChange} />    
+                                onChange={this.onChange} /> 
+                                 <span className="red-text" style={{color:'red'}}>
+                                  {errors.lastname}  
+                              </span>     
                             </div>
 
                              <div className="form-group">
                               <label for="adress">Adresse</label>
-                              <input type="text" name="adress"  id="adress"  className="form-control"
+                              <input type="text" name="adress"  id="adress"  className={classnames("form-control",{
+                                  invalid: errors.adress
+                                })}
                                 value={this.state.adress}
-                                onChange={this.onChange} />    
+                                onChange={this.onChange} /> 
+                                 <span className="red-text" style={{color:'red'}}>
+                                  {errors.adress}  
+                              </span>     
                             </div>
                                 
 
@@ -185,9 +215,14 @@ onSubmitPassword(e){
 
                              <div className="form-group">
                               <label for="telephone">Téléphone</label>
-                              <input type="text" name="telephone"  id="telephone"  className="form-control"
+                              <input type="text" name="telephone"  id="telephone"  className={classnames("form-control",{
+                                  invalid: errors.telephone
+                                })}
                                 value={this.state.telephone}
                                 onChange={this.onChange}/>
+                                 <span className="red-text" style={{color:'red'}}>
+                                  {errors.telephone}  
+                              </span>  
                             </div>
                             
                             
@@ -296,6 +331,7 @@ function loadData(store, idUser){
 }
 
 export default {
+  loadData,
   component: connect(
   mapStateToProps,
   {getUser, updateUser}

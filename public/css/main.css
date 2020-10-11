@@ -307,31 +307,17 @@ nav ul li:hover ul{
      
 
 
-.homeBtn{
-    background: #ed7e24;
-    color: #fff;
-    font-size: 18px;
-    width: 200px;
-    border: 0;
-    padding: 15px;
-    cursor: pointer;
-    font-weight: bold;
-   
-}
+.homeSection .boxed-btn2{background:transparent;color:#ed7e24;display:inline-block;padding:18px 24px;font-family:"Roboto",sans-serif;font-size:14px;font-weight:800;border:0;border:2px solid #ed7e24;letter-spacing:2px;text-transform:uppercase}.boxed-btn2:hover{background:#fff;color:#ed7e24; text-decoration: none !important}.boxed-btn2:focus{outline:none}
 
-.homeBtn:hover{
-    background: #fff;
-    color: #eb5424
-   
-}
-   .grille{
+.grille{
 	background-color: #f2f9f8;
 	height: auto;
+
 	
 }
 
 .logos{
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .texte{
@@ -367,7 +353,22 @@ nav ul li:hover ul{
 }
 
 
-.al-services {
+.aboutBtn .btnContact{
+    background: #ed7e24;
+    color: #fff;
+    font-size: 18px;
+    width: 200px;
+    border: 0;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+   
+}
+
+
+   .al-services {
      min-height:100vh;
      background:rgba(248, 248, 255, 0.85);
      font-family: 'Lato', sans-serif;
@@ -894,7 +895,7 @@ h1{
 }
 }
 .loginPage h1{
-	color: orange;
+	color: #ed7e24;
 }.dash{
     z-index: -1;
 }
@@ -1424,12 +1425,14 @@ h1{
     padding: 15px;
     cursor: pointer;
     font-weight: bold;
+    text-decoration: none;
    
 }
 
 .townBtn:hover{
     background: #fff;
-    color: #eb5424
+    color: #eb5424;
+     text-decoration: none;
    
 }
    .grilleTowns{
@@ -1538,6 +1541,7 @@ h1{
 .parisBtn:hover{
      background: #fff;
     color: #eb5424;
+    text-decoration: none;
 }
 
 .parisBtnContact{
@@ -1554,7 +1558,8 @@ h1{
 
 .parisBtnContact:hover{
      background: #fff;
-    color: #eb5424
+    color: #eb5424;
+    text-decoration: none;
 }
 
 
@@ -1719,6 +1724,7 @@ h1{
 .lyonBtn:hover{
      background: #fff;
     color: #eb5424;
+    text-decoration: none;
 }
 
 .lyonBtnContact{
@@ -1735,7 +1741,8 @@ h1{
 
 .lyonBtnContact:hover{
      background: #fff;
-    color: #eb5424
+    color: #eb5424;
+    text-decoration: none;
 }
 
 
@@ -1900,6 +1907,7 @@ h1{
 .marseilleBtn:hover{
      background: #fff;
     color: #eb5424;
+    text-decoration: none;
 }
 
 .marseilleBtnContact{
@@ -1912,11 +1920,14 @@ h1{
     margin-left: 5px;
     cursor: pointer;
     font-weight: bold;
+
    }
 
 .marseilleBtnContact:hover{
      background: #fff;
-    color: #eb5424
+     color: #eb5424;
+     text-decoration: none;
+
 }
 
 
@@ -2082,6 +2093,7 @@ h1{
 .bordeauxBtn:hover{
      background: #fff;
     color: #eb5424;
+    text-decoration: none;
 }
 
 .bordeauxBtnContact{
@@ -2098,7 +2110,8 @@ h1{
 
 .bordeauxBtnContact:hover{
      background: #fff;
-    color: #eb5424
+    color: #eb5424;
+    text-decoration: none;
 }
 
 
@@ -2213,12 +2226,14 @@ h1{
 .coordonnees .townItem{
 	font-size: 22px;
 	padding-top: 5px;
+	list-style: none;
 
 }
  
 .coordonnees .townItem .townsData li{
 	font-size: 15px;
-	margin-left: 30px;
+	margin: 0;
+	list-style: none;
 
 }
 

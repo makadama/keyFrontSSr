@@ -14,7 +14,7 @@ class ProductListPage extends Component{
 
 		return( 
 			
-				<div className="container">
+				<div className="container" data-test="productsPage">
 				<h2> les paniers  key service </h2>
 				<p>commandez vos paniers! Keyservice vous les livrera dans les plus bref délais </p>
 				<hr/>

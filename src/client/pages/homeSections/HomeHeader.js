@@ -16,7 +16,7 @@ class HomeHeader extends Component {
                     <p className="homeDesc">
                         Faites vous louer et gérer votre bien immobilier sans effort ! 
                     </p>
-                    <button className="homeBtn">Simuler votre bien!</button>
+                    <a href="/simulation" className="boxed-btn2">Simuler un bien</a>
                 </div>
             </div>
         </div>

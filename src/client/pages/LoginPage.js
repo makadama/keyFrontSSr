@@ -84,7 +84,7 @@ class LoginPage extends Component{
 	render(){
 		const { errors } = this.state;
 		return(
-			<div>
+			<div style={{marginTop:'100px', marginBottom:'1px', height:'auto'}}>
 				{this.head()}
 			<div className="container loginPage">
 			<div className="row">
@@ -93,10 +93,10 @@ class LoginPage extends Component{
                     {errors.message ? <span className="alert alert-danger" style={{width:'auto'}}>{errors.message} </span>:''}
                 </p>
 	            <form noValidate onSubmit={this.onSubmit}>
-	              <h1 className="h3 mb-3 font-weight-normal">Login</h1>
-
+	              <h1 className="h3 mb-3 font-weight-normal">Se connecter</h1>
+	              	<div className="seperator2"></div>
 	              	<div className="form-group">
-	                <label htmlFor="email">Email address</label>
+	                <label htmlFor="email">Adresse email</label>
 	                <input
 	                  id="email"
 	                  type="text"
@@ -104,7 +104,7 @@ class LoginPage extends Component{
 	                  	invalid: errors.email || errors.emailnotfound
 	                  })}
 	                  name="email"
-	                  placeholder="Enter email"
+	                  placeholder="Entrer votre email"
 	                  value={this.state.email}
                   	 
 					  onChange={this.onChange}
@@ -118,7 +118,7 @@ class LoginPage extends Component{
               		</div>
 
               		<div className="form-group">
-	                <label htmlFor="password">Password</label>
+	                <label htmlFor="password">Mot de Passe</label>
 	                <input
 	                  id="password"
 	                  type="password"
@@ -126,7 +126,7 @@ class LoginPage extends Component{
 	                  	invalid: errors.password || errors.passwordincorrect
 	                  })}
 	                  name="password"
-	                  placeholder="Password"
+	                  placeholder="Entrer votre mot de passe"
                   	 
 	                  value={this.state.password}
 	                  onChange={this.onChange}
@@ -136,6 +136,7 @@ class LoginPage extends Component{
 		                  {errors.passwordincorrect}
 		                </span>
               		</div>
+              		 <p className="text-p text-right"> <a href="/mot-de-passe-oublie">Mot de passe oublié?</a> </p>
 
 
 	              <button

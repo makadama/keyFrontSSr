@@ -6,6 +6,7 @@ import { loginUser } from "../actions/authActions";
 import { fetchCurrentUser } from '../actions/authActions';
 import classnames from "classnames";
 import { Helmet } from 'react-helmet';
+import './LoginPage.css';
 
 
 class LoginAfterRegister extends Component{
@@ -32,23 +33,24 @@ class LoginAfterRegister extends Component{
 	componentDidMount() {
     // If logged in and user navigates to Register page, should redirect them to dashboard
     if (this.props.auth) {
-
-     
-        this.props.history.push("/dashboardHote");
-      
-      
-      
+		 if (this.props.auth.type === "hote") {
+			this.props.history.push("/dashboardHote");
+    	}
+    	if(this.props.auth.type === "voyageur"){
+    		this.props.history.push("/dashboardVoyageur");
+    }
     }
   }
 
 
 	  componentWillReceiveProps(nextProps) {
 	  	 if (nextProps.auth) {
-
-    	
-    		this.props.history.push("/dashboardHote");
-    
-      
+				if (nextProps.auth.type === "hote") {
+			    		this.props.history.push("/dashboardHote");
+			    }
+			    if(nextProps.auth.type === "voyageur") {
+			    		this.props.history.push("/dashboardVoyageur");
+			    }
     }
     if (nextProps.errors) {
       this.setState({
@@ -76,9 +78,9 @@ class LoginAfterRegister extends Component{
 	render(){
 		const { errors } = this.state;
 		return(
-			<div>
+			<div style={{marginTop:'100px', marginBottom:'1px', height:'auto'}}>
 				{this.head()}
-			<div className="container">
+			<div className="container loginPage">
 			<div className="row">
 	          <div className="col-md-6 mt-5 mx-auto">
 	          <p className="text-center">
@@ -90,10 +92,10 @@ class LoginAfterRegister extends Component{
                   <strong>Votre compte a été créé avec succès !</strong>
                     
                 </div>
-	              <h1 className="h3 mb-3 font-weight-normal">Login</h1>
-
+	              <h1 className="h3 mb-3 font-weight-normal">Se connecter</h1>
+	              <div className="seperator2"></div>
 	              	<div className="form-group">
-	                <label htmlFor="email">Email address</label>
+	                <label htmlFor="email">Adresse email</label>
 	                <input
 	                  id="email"
 	                  type="text"
@@ -101,7 +103,7 @@ class LoginAfterRegister extends Component{
 	                  	invalid: errors.email || errors.emailnotfound
 	                  })}
 	                  name="email"
-	                  placeholder="Enter email"
+	                  placeholder="Entrer votre email"
 	                  value={this.state.email}
                   	 
 					  onChange={this.onChange}
@@ -114,7 +116,7 @@ class LoginAfterRegister extends Component{
               		</div>
 
               		<div className="form-group">
-	                <label htmlFor="password">Password</label>
+	                <label htmlFor="password">Mot de passe</label>
 	                <input
 	                  id="password"
 	                  type="password"
@@ -122,7 +124,7 @@ class LoginAfterRegister extends Component{
 	                  	invalid: errors.password || errors.passwordincorrect
 	                  })}
 	                  name="password"
-	                  placeholder="Password"
+	                  placeholder="Entrer votre mot de passe"
                   	 
 	                  value={this.state.password}
 	                  onChange={this.onChange}
@@ -132,6 +134,7 @@ class LoginAfterRegister extends Component{
 		                  {errors.passwordincorrect}
 		                </span>
               		</div>
+              		 <p className="text-p text-right"> <a href="/mot-de-passe-oublie">mot de passe oublié?</a> </p>
 
 
 	              <button
@@ -141,9 +144,7 @@ class LoginAfterRegister extends Component{
 	                Login!
 	              </button>
 
-              		<label>Pas de compte?
-              			 <a className="underlineHover" href="/register"> inscrivez vous!</a> 
-              		</label>
+              		
               	
             </form>
               </div>

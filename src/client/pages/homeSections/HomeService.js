@@ -26,7 +26,7 @@ class HomeService extends Component {
                     <span className="al-service-icon"> <i className="fas fa-bullhorn" aria-hidden="true"></i></span>
                     <h3 className="mt-3"> Annonce/optimisation des prix </h3>
                     <p className="mt-3">création de l'annonce, prix dynamiques... </p>
-                    <a href="#" className="btn btn-outline-primary mt-3">Voir plus</a>
+                    <a href="/services" className="btn  mt-3">Voir plus</a>
                 </div>
             </div>
             <div className="col-sm-6 col-md-6 col-lg-3">
@@ -36,7 +36,7 @@ class HomeService extends Component {
 
                     <h3 className="mt-3"> Accueil et départ des voyageurs</h3>
                     <p className="mt-3">remise de clés (checkin, checkout)... </p>
-                    <a href="#" className="btn btn-primary mt-3">Voir plus</a>
+                    <a href="/services" className="btn  mt-3">Voir plus</a>
                 </div>
             </div>
             <div className="col-sm-6 col-md-6 col-lg-3">
@@ -45,7 +45,7 @@ class HomeService extends Component {
 
                     <h3 className="mt-3"> communication avec le voyageur</h3>
                     <p className="mt-3">Assistance auprès de vos voyageurs... </p>
-                    <a href="#" className="btn btn-outline-primary mt-3">Voir plus</a>
+                    <a href="/services" className="btn  mt-3">Voir plus</a>
                 </div>
             </div>
             <div className="col-sm-6 col-md-6 col-lg-3">
@@ -54,7 +54,7 @@ class HomeService extends Component {
 
                     <h3 className="mt-3"> Ménage et état des lieux de vos biens</h3>
                     <p className="mt-3">ménage da qualité hotelière... </p>
-                    <a href="#" className="btn btn-outline-primary mt-3">Voir plus</a>
+                    <a href="/services" className="btn  mt-3">Voir plus</a>
                 </div>
             </div>
            

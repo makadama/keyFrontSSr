@@ -1,5 +1,5 @@
 import{
-	GET_ERRORS, GET_USER, UPDATE_USER, PROFIL_SUCCESS
+	GET_ERRORS, GET_USER, UPDATE_USER, GET_SUCCESS
 } from './types';
 
 
@@ -21,14 +21,13 @@ export const getUser = (userId) => async  (dispatch, getState, api) => {
 
 export const updateUser= (userId, userData) => async (dispatch, getState, api)=>{
 	try{
+		console.log(userData);
 		const res= await api.put(`/api/user/${userId}`, userData);
 		dispatch({
 			type: GET_USER,
 			payload: res.data
 		})
-		dispatch({
-			type:PROFIL_SUCCESS
-		})
+		dispatch(answerSuccessfully());
 	}catch(err){
 		dispatch({
         type: GET_ERRORS,
@@ -38,3 +37,8 @@ export const updateUser= (userId, userData) => async (dispatch, getState, api)=>
 }
 
 
+export const answerSuccessfully = () => {
+	return {
+    type: GET_SUCCESS
+  };
+}

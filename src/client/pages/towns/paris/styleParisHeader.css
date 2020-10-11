@@ -64,6 +64,7 @@
 .parisBtn:hover{
      background: #fff;
     color: #eb5424;
+    text-decoration: none;
 }
 
 .parisBtnContact{
@@ -80,7 +81,8 @@
 
 .parisBtnContact:hover{
      background: #fff;
-    color: #eb5424
+    color: #eb5424;
+    text-decoration: none;
 }
 
 

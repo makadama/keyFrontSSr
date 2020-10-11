@@ -10,8 +10,8 @@ class CallusParis extends Component  {
         		<div className="row">
         			<div className='col-12 text-center'>
         				<p>
-        					<a className="btn btn-lg" style={{backgroundColor:'#00cccb', marginTop:'30px', textAlign:'center', border: 'none'}}>
-        						Voir Nos Tarifs
+        					<a className="btn btn-lg" href="/services" style={{backgroundColor:'#00cccb', marginTop:'30px', textAlign:'center', border: '0 solid'}}>
+        						Voir Nos services
         					</a>
 
         				</p>

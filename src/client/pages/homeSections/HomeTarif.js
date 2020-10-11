@@ -58,10 +58,7 @@ class HomeTarif extends Component {
                                 </ul>
                                 
                             </div>
-                            <div className="tarif-end">
-                                 <i className="fas fa-arrow-right"></i>
-                                 <a href="" className="linkTarif">  En savoir plus</a>
-                            </div>
+                           
                         </div>
                     </div>
                     
@@ -110,10 +107,7 @@ class HomeTarif extends Component {
                                 </ul>
                                 
                             </div>
-                            <div className="tarif-end">
-                                 <i className="fas fa-arrow-right"></i>
-                                 <a href="" className="linkTarif">  En savoir plus</a>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

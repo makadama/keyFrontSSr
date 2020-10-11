@@ -16,8 +16,8 @@ class ParisHeader extends Component {
                     <p className="parisDesc">
                         à Paris
                     </p>
-                    <button className="home-btn parisBtn">Simuler votre bien!</button>
-                    <button className="home-btn parisBtnContact">Nous Contacter</button>
+                         <a href="/simulation" className="home-btn parisBtn">Simuler votre bien</a>
+                         <a href="/contact" className="home-btn parisBtnContact">Nous contacter</a>
                 </div>
             </div>
         </div>

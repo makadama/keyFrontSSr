@@ -12,7 +12,7 @@ class TownsHeader extends Component {
             <div className="container">
                 <div className='townInformation'>
                     <h4 className="townInfo">Key services dans les plus grandes villes Françaises</h4> 
-                    <button className="townBtn">Simuler votre bien!</button>
+                    <a href="/contact" className="townBtn">Nous contacter</a>
                 </div>
             </div>
         </div>

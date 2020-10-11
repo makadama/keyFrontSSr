@@ -6,6 +6,8 @@ import LoginPage from './pages/LoginPage';
 import LoginAfterRegister from './pages/LoginAfterRegister';
 import DashboardHote from './pages/DashboardHote';
 import NotFoundPage from './pages/NotFoundPage';
+import ForgetPassword from './pages/ForgetPassword';
+import ResetPassword from './pages/ResetPassword';
 import AccordionIndex from './pages/faq/AccordionIndex';
 import LogementsListPage from './pages/LogementsListPage';
 import TownPage from "./pages/TownPage";
@@ -21,6 +23,8 @@ import SimulationPage from './pages/simulation/SimulationPage';
 import OwnerLayout from './components/Layouts/OwnerLayout';
 import AddLogementPage from './pages/OwnerPanel/AddLogementPage';
 import LogementDetailsPage from './pages/OwnerPanel/LogementDetailsPage';
+import Details from './pages/OwnerPanel/Details';
+
 import LogementAvailability from './pages/OwnerPanel/LogementAvailability';
 import MyTarif from './pages/OwnerPanel/MyTarif';
 import UploadImage from './pages/OwnerPanel/UploadImage';
@@ -148,6 +152,24 @@ export default [
     ]
   },
   {
+    path:'/mot-de-passe-oublie',
+    ...App,
+    routes:[
+        {
+          ...ForgetPassword
+        }
+    ]
+  },
+   {
+    path:'/changer-mot-de-passe/:slug',
+    ...App,
+    routes:[
+        {
+          ...ResetPassword
+        }
+    ]
+  },
+  {
     path:'/a-propos',
     ...App,
     routes:[
@@ -162,15 +184,6 @@ export default [
     routes:[
         {
           ...UserProfil
-        }
-    ]
-  },
-  {
-    path:'/testPage',
-    ...App,
-    routes:[
-        {
-          ...TestPage
         }
     ]
   },

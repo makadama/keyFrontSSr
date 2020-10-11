@@ -64,6 +64,7 @@
 .lyonBtn:hover{
      background: #fff;
     color: #eb5424;
+    text-decoration: none;
 }
 
 .lyonBtnContact{
@@ -80,7 +81,8 @@
 
 .lyonBtnContact:hover{
      background: #fff;
-    color: #eb5424
+    color: #eb5424;
+    text-decoration: none;
 }
 
 

@@ -16,8 +16,8 @@ class LyonHeader extends Component {
                     <p className="lyonDesc">
                         Lyon
                     </p>
-                    <button className="home-btn lyonBtn">Simuler votre bien!</button>
-                    <button className="home-btn lyonBtnContact">Nous Contacter</button>
+                    <a href="/simulation" className="home-btn lyonBtn">Simuler votre bien</a>
+                    <a href="/contact" className="home-btn lyonBtnContact">Nous contacter</a>
                 </div>
             </div>
         </div>

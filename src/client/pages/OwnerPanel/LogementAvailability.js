@@ -121,7 +121,7 @@ handleChange(dateName, dateValue) {
     }
 
 		return(
-			<div className="container">
+			<div className="container" data-test="availabilityComponent">
 			 
           <p className="text-center">
                           {errors.message ? <span className="alert alert-danger alert-dismissible fade show" style={{width:'auto'}}>{errors.message}

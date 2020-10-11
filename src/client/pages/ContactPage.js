@@ -71,7 +71,7 @@ class ContactPage extends Component {
       const { mail } = this.state;
       const { errors } = this.state;
     return (
-      <div>
+      <div data-test="contactComponent">
         {this.head()}
       <div className="contactGrid">
         <div className="container forms mt-5 mb-5 ">
@@ -142,7 +142,7 @@ class ContactPage extends Component {
                             invalid: errors.firstname
                             })}
                             value={this.state.firstname}
-                            onChange={this.onChange} id="firstname" aria-describedby="emailHelp" placeholder="Enter name" required/>
+                            onChange={this.onChange} id="firstname" aria-describedby="emailHelp" placeholder="votre nom" required/>
                           <span className="red-text" style={{color:'red'}}>
                               {errors.firstname}  
                           </span>
@@ -153,7 +153,7 @@ class ContactPage extends Component {
                             invalid: errors.email
                             })}
                             value={this.state.email}
-                            onChange={this.onChange} id="email" aria-describedby="emailHelp" placeholder="Enter email" required/>
+                            onChange={this.onChange} id="email" aria-describedby="emailHelp" placeholder="votre email" required/>
                             <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                           <span className="red-text" style={{color:'red'}}>
                               {errors.email}  
@@ -165,7 +165,7 @@ class ContactPage extends Component {
                             invalid: errors.telephone
                             })}
                             value={this.state.telephone}
-                            onChange={this.onChange} id="telephone" aria-describedby="emailHelp" placeholder="Enter cellPhone" required/>
+                            onChange={this.onChange} id="telephone" aria-describedby="emailHelp" placeholder="votre numéro de téléphone" required/>
                           <span className="red-text" style={{color:'red'}}>
                               {errors.telephone}  
                           </span>

@@ -16,8 +16,8 @@ class MarseilleHeader extends Component {
                     <p className="marseilleDesc">
                         Marseille
                     </p>
-                    <button className="home-btn marseilleBtn">Simuler votre bien!</button>
-                    <button className="home-btn marseilleBtnContact">Nous Contacter</button>
+                    <a href="/simulation" className="home-btn marseilleBtn">Simuler votre bien</a>
+                    <a href="/contact" className="home-btn marseilleBtnContact">Nous contacter</a>
                 </div>
             </div>
         </div>

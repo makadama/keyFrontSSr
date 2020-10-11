@@ -47,7 +47,7 @@ const LeftSection = ({auth}) => {
         </li>
         <li>
           <a
-            href="#"
+            href="/contact"
           >
           <i class="fas fa-envelope" style={{marginRight:'8px'}}></i>
             Contacter Key Service

@@ -61,8 +61,8 @@ class HomeAbout extends Component {
         	</div>
 
         	<div className="row justify-content-center">
-            <div className="col-3 text-center">
-        			<button type="button" className="btns">Nous Contacter</button>
+            <div className="col text-center aboutBtn">
+        			<a href="/contact" className="btnContact">Nous contacter</a>
             </div>
         	</div>
 

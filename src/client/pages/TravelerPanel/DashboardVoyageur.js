@@ -29,9 +29,13 @@ class DashboardVoyageur extends Component {
 
 
   render() {
+
          const { firstname } = this.props.auth;
          const { errors } = this.props.errors;
-         const {id} = this.props.auth        
+         const {id} = this.props.auth  ;
+         const {auth} = this.props;
+         console.log(auth);
+
     return (
     <div style={{top:'100px'}} className="dash">  
       {this.head()}
@@ -44,7 +48,7 @@ class DashboardVoyageur extends Component {
             </div>
         </div>
       </div>
-      <div class="row ">
+      <div class="row " style={{marginBottom:'15px'}}>
             <div class="col-lg-4 col-md-6 col-xs-12 d-flex justify-content-center " >
                 <div class="card-box bg-blue ">
                     <div class="inner ">

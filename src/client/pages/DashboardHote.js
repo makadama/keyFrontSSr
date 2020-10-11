@@ -45,7 +45,7 @@ class DashboardHote extends Component {
             </div>
         </div>
       </div>
-      <div class="row ">
+      <div class="row " style={{marginBottom:'15px'}}>
             <div class="col-lg-6 col-md-6 d-flex justify-content-center " >
                 <div class="card-box bg-blue ">
                     <div class="inner ">

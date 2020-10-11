@@ -1,7 +1,7 @@
 import jwt_decode from "jwt-decode";
 
 import{
-	GET_ERRORS, FETCH_CURRENT_USER
+	GET_ERRORS, FETCH_CURRENT_USER, SET_MAIL
 } from './types';
 
 
@@ -70,5 +70,32 @@ export const fetchCurrentUser = () => async (dispatch, getState, api) => {
 };
 
 
+export const sendAnEmail = (mailAdress) => async (dispatch, getState, api) =>{
+  try{
+    const res = await api.post('api/auth/sendLinkByEmail', mailAdress);
+      dispatch({
+      type: SET_MAIL,
+      payload: res.data
+    }) 
+  }catch(err){
+     dispatch({
+      type: GET_ERRORS,
+      payload: err.response.data
+    })
+  }
+}
 
 
+export const sendNewPassword = (newPasswords, history) => async (dispatch, getState, api) =>{
+  try{
+    const res = await  api.post('/api/auth/sendPasswords', newPasswords);
+    if(res){
+      history.push("/connexion")
+    }
+  }catch(err){
+       dispatch({
+      type: GET_ERRORS,
+      payload: err.response.data
+    })
+  }
+}

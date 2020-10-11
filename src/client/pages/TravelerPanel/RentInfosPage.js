@@ -143,7 +143,7 @@ render(){
        }
 
   return (
-    <div>
+    <div data-test="rentInfosComponent">
      	<div className="container">
      		<div className="row">
      			<div className="col-12">
@@ -254,7 +254,7 @@ render(){
       
     </div>
   );
-};
+}
 };
 
 function mapStateToProps(state){

@@ -19,7 +19,7 @@ class MyTarif extends Component {
       superficie: "",
       fk_hote:"",
       tarif:"",
-
+      success: false,
       errors:{}
     }
 
@@ -35,6 +35,7 @@ class MyTarif extends Component {
     }
 
     componentWillReceiveProps(nextProps){
+
     this.setState({
       fk_ville: nextProps.logements.logement.fk_ville,
       adresse: nextProps.logements.logement.adresse,
@@ -46,8 +47,13 @@ class MyTarif extends Component {
       description: nextProps.logements.logement.description,
       superficie: nextProps.logements.logement.superficie,
       tarif: nextProps.logements.logement.fk_tarif,
+      errors: nextProps.errors,
+      success: nextProps.success
     });
+    
+
   }
+
 
         
     
@@ -80,11 +86,13 @@ this.props.updateLogement(this.props.logements.logement.id, logementInfo, this.p
   render() {
     const { logement } = this.props.logements;
       const { id } = this.props.auth;
+      const {success } = this.state;
      
 
     return (
         
        <div class="container mb-5 mt-5">
+
     <div class="pricing card-deck flex-column flex-md-row mb-3">
         <div class="card card-pricing text-center px-3 mb-4">
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom  text-white shadow-sm" style={{backgroundColor:'#00cccb'}}>Pack check-in check-out</span>
@@ -121,7 +129,13 @@ this.props.updateLogement(this.props.logements.logement.id, logementInfo, this.p
         </div>
         
     </div>
-
+            <p className="text-center col-lg-12 col-md-12 col-xs-12">
+                    {success ? <span className="alert alert-success alert-dismissible fade show" style={{width:'auto'}}> votre logement a été mise à jour!
+                             <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                             </button>
+                           </span>:''}
+            </p>
             <form noValidate onSubmit={this.onSubmit}>
                     <h1 className="h3 mb-3 font-weight-normal">Tarif</h1>
                           <div className="form-group">
@@ -149,7 +163,7 @@ this.props.updateLogement(this.props.logements.logement.id, logementInfo, this.p
 }
 
 function mapStateToProps(state){
-  return { logements: state.logements, auth: state.auth};
+  return { logements: state.logements, auth: state.auth, success: state.success};
 }
 function loadData(store, id){
 

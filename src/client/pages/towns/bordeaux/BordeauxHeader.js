@@ -16,8 +16,8 @@ class BordeauHeader extends Component {
                     <p className="bordeauxDesc">
                         Bordeaux
                     </p>
-                    <button className="home-btn bordeauxBtn">Simuler votre bien!</button>
-                    <button className="home-btn bordeauxBtnContact">Nous Contacter</button>
+                    <a href="/simulation" className="home-btn bordeauxBtn">Simuler votre bien</a>
+                    <a href="/contact" className="home-btn bordeauxBtnContact">Nous contacter</a>
                 </div>
             </div>
         </div>

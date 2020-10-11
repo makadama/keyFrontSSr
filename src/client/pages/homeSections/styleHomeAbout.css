@@ -1,11 +1,12 @@
 .grille{
 	background-color: #f2f9f8;
 	height: auto;
+
 	
 }
 
 .logos{
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .texte{
@@ -41,3 +42,19 @@
 }
 
 
+.aboutBtn .btnContact{
+    background: #ed7e24;
+    color: #fff;
+    font-size: 18px;
+    width: 200px;
+    border: 0;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+   
+}
+
+
+   

@@ -48,21 +48,5 @@
      
 
 
-.homeBtn{
-    background: #ed7e24;
-    color: #fff;
-    font-size: 18px;
-    width: 200px;
-    border: 0;
-    padding: 15px;
-    cursor: pointer;
-    font-weight: bold;
-   
-}
+.homeSection .boxed-btn2{background:transparent;color:#ed7e24;display:inline-block;padding:18px 24px;font-family:"Roboto",sans-serif;font-size:14px;font-weight:800;border:0;border:2px solid #ed7e24;letter-spacing:2px;text-transform:uppercase}.boxed-btn2:hover{background:#fff;color:#ed7e24; text-decoration: none !important}.boxed-btn2:focus{outline:none}
 
-.homeBtn:hover{
-    background: #fff;
-    color: #eb5424
-   
-}
-   

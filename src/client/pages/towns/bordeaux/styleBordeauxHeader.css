@@ -65,6 +65,7 @@
 .bordeauxBtn:hover{
      background: #fff;
     color: #eb5424;
+    text-decoration: none;
 }
 
 .bordeauxBtnContact{
@@ -81,7 +82,8 @@
 
 .bordeauxBtnContact:hover{
      background: #fff;
-    color: #eb5424
+    color: #eb5424;
+    text-decoration: none;
 }
 
 

@@ -1,5 +1,6 @@
 import React , {Component} from 'react';
 import { connect } from 'react-redux';
+import PropTypes from "prop-types";
 import { removeFromCart, addToCart } from "../../actions/cartActions";
 import { getCommandeItem } from '../../actions/commandeItemActions';
 import symbol from  '../../utils/symbol';
@@ -22,16 +23,16 @@ componentDidMount(){
       console.log(commandeItems)
 
  	return(
- 			<div>
+ 			<div data-test="cartComponent">
         
         {commandeItems.length === 0 ? (
-          <div>
+          <div data-test="noProductFound">
               <i style={{marginRight:'5px',color:'#ed7e24', fontSize:'30px'}} className="fas fa-shopping-cart"></i>
               Basket is empty
           </div>
           
         ) : (
-          <div>
+          <div data-test="weFoundProduct">
             
               <i style={{marginRight:'5px', whidth:'150px', height:'150px', color:'#ed7e24', fontSize:'30px'}} className="fas fa-shopping-cart"></i>
               {commandeItems.length} items. <a href={`/dashboardVoyageur/${id}/mon-panier
@@ -43,10 +44,16 @@ componentDidMount(){
       </div>
  			)
 }
-}const mapStateToProps = state =>({
+
+}
+Cart.propTypes = {
+  parameter: PropTypes.string
+ 
+};
+
+const mapStateToProps = state =>({
 	commandeItems: state.commandeItems,
-  auth: state.auth, 
-  errors: state.errors
+  auth: state.auth 
 })
 
 export default connect(mapStateToProps, {getCommandeItem}) (Cart); 

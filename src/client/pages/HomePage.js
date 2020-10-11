@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './HomePage.css';
+import './styleHomePage.css';
 import { Helmet } from 'react-helmet';
 import HomeHeader from './homeSections/HomeHeader';
 import HomeAbout from './homeSections/HomeAbout';
@@ -12,7 +12,7 @@ import HomeTestimonials from './homeSections/HomeTestimonials';
 class Home extends Component{
   head(){
     return(
-        <Helmet>
+      <Helmet>
           <title>Accueil - Keyservice Conciergerie</title>  
       </Helmet>
       );
@@ -20,7 +20,7 @@ class Home extends Component{
 render(){
 
   return (
-    <div>
+    <div data-test="homePageComponent"  style={{marginTop:'100px', marginBottom:'5px', height:'auto'}}>
       {this.head()}
      	<HomeHeader/>
      	<HomeAbout/>

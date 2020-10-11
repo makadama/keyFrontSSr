@@ -74,12 +74,12 @@ class AddLogementPage extends Component {
     return (
         <div className="container">
           <p>
-            Avant d'ajouter un bien nous vous suggerons de faire une <a href="#"> simulation </a> au préalable
+            Avant dajouter un bien nous vous suggerons de faire une <a href="#"> simulation </a> au préalable
           </p>
           <div className="row">
               <div className="col-md-6 mt-5 mx-auto">
                   <form noValidate onSubmit={this.onSubmit}>
-                    <h1 className="h3 mb-3 font-weight-normal">Ajouter un tarif</h1>
+                    <h1 className="h3 mb-3 font-weight-normal">Ajouter un bien</h1>
                         <p className="text-center">
                         {errors.message ? <span className="alert alert-danger alert-dismissible fade show" style={{width:'auto'}}>{errors.message}
                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
