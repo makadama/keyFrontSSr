@@ -3,7 +3,7 @@ import { getProduitById } from "../../actions/productActions";
 import { addCommandeItem } from "../../actions/commandeItemActions";
 import { connect } from "react-redux";
 import symbol from  '../../utils/symbol';
-import './StyleDisplayProduct.css';
+import './styleDisplayProduct.css';
 //import './styleProductList.css';
 
 
