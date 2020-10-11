@@ -39,8 +39,6 @@ class LoginPage extends Component{
     	if(this.props.auth.type === "voyageur"){
     		this.props.history.push("/dashboardVoyageur");
     }
-      
-      
     }
   }
 
@@ -53,10 +51,6 @@ class LoginPage extends Component{
 			    if(nextProps.auth.type === "voyageur") {
 			    		this.props.history.push("/dashboardVoyageur");
 			    }
-
-
-    
-      
     }
     if (nextProps.errors) {
       this.setState({
