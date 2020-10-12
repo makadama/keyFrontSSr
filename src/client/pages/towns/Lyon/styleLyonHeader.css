@@ -1,8 +1,8 @@
 
 .lyonSection {
     height: 500px;
-    background: url(https://lyonsecret.com/wp-content/uploads/2020/02/BELLECOUR.jpg);
-    background-size: cover;
+   background-image: url("/media/lyonHeaderimg.jpg");
+   background-size: cover;
     background-position: center;
     text-align: center;
     position: relative;

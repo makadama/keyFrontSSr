@@ -15,7 +15,7 @@ const app = express();
 
 app.use(
   '/api',
-  proxy("http://localhost:8080"));
+  proxy("https://ks-backend.herokuapp.com/"));
 
 app.use(express.static('public'));
 app.use(bodyParser.json());

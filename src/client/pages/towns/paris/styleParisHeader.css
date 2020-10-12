@@ -1,8 +1,8 @@
 
 .parisSection {
     height: 500px;
-    background: url(https://sf1.viepratique.fr/wp-content/uploads/sites/5/2018/05/plus-belles-vues-paris.jpg);
-    background-size: cover;
+   background-image: url("/media/parisHeaderimg.jpg");
+   background-size: cover;
     background-position: center;
     text-align: center;
     position: relative;

@@ -1,6 +1,7 @@
 .townSection{
     height: 500px;
-    background: url(https://viewthevibe.com/wp-content/uploads/2014/09/Travel-Smart.jpg);
+    /*background: url(https://viewthevibe.com/wp-content/uploads/2014/09/Travel-Smart.jpg);*/
+    background-image: url("/media/townHeaderimg.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;

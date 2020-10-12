@@ -1,6 +1,6 @@
 .aboutSection{
     height: 500px;
-    background: url(https://www.laconciergerie-odalys.com/wp-content/uploads/2018/11/header-la-concieregrie-by-odalys.jpg);
+    background-image: url("/media/aboutHeaderimg.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;

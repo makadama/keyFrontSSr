@@ -2,7 +2,7 @@
 .bordeauxSection {
     
     height: 500px;
-    background: url(https://www.pixopolitan.com/pub/media/catalog/product/cache/5b287fc191c76a73657d6e03905e88eb/9/8/9850_sd.jpg);
+    background-image: url("/media/bordeauxHeaderimg.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;

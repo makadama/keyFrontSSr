@@ -20,7 +20,7 @@ export const checkProps = (component, expectedProps) =>{
 export const testStore = (initialState) => {
 
 	const axiosInstance = axios.create({
-    baseURL: 'http://localhost:8080'
+    baseURL: 'https://ks-backend.herokuapp.com/'
   });
 
      const store = createStore(
