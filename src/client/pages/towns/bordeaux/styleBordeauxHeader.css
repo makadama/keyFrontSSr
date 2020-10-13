@@ -2,7 +2,7 @@
 .bordeauxSection {
     
     height: 500px;
-    background-image: url("/client/assets/bordeauxHeaderimg.jpg");
+    background-image: url("/media/bordeauxHeaderimg.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
