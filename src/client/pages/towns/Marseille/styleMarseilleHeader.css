@@ -1,7 +1,7 @@
 
 .marseilleSection {
     height: 500px;
-    background-image: url("/media/marseilleHeaderimg.jpg");
+    background-image: url("https://ks-frontend.herokuapp.com/client/assets/marseilleHeaderimg.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;

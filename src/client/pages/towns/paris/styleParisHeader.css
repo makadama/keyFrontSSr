@@ -1,7 +1,7 @@
 
 .parisSection {
     height: 500px;
-   background-image: url("/media/parisHeaderimg.jpg");
+   background-image: url("https://ks-frontend.herokuapp.com/client/assets/parisHeaderimg.jpg");
    background-size: cover;
     background-position: center;
     text-align: center;
