@@ -1,7 +1,7 @@
 
 .lyonSection {
     height: 500px;
-   background-image: url("https://ks-frontend.herokuapp.com/client/assets/lyonHeaderimg.jpg");
+   background-image: url("/client/assets/lyonHeaderimg.jpg");
    background-size: cover;
     background-position: center;
     text-align: center;
