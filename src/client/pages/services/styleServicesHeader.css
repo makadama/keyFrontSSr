@@ -37,12 +37,11 @@
 } 
 
 .servicesDesc{
-    font-size: 30px;
-    line-height: 1.5;
+    font-size: 25px;
+    line-height: 0.9;
     color: #273746;
     margin-bottom: 20px;
-    width: 550px;
-     text-align: center;
+    text-align: center;
  }
 
      
