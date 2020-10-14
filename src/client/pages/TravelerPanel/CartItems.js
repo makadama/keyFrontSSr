@@ -44,7 +44,7 @@ class CartItems extends Component{
     showItems = this.props.commandeItems.commandeItems.map(commandeItem => {
              return( <li key={commandeItem.id}>
                 <div className="cart-image">
-                  <img src={`/media/${commandeItem.image}.jpg`} alt="product" />
+                  <img src={`/media/${commandeItem.image}.JPG`} alt="product" />
                 </div>
                 <div className="cart-name">
                   <div>

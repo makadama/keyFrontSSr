@@ -64,7 +64,7 @@ handleAddToCart(e){
 				<div className="container">
 					<div className="details">
 						<div className="details-image">
-							<img src={`/media/${productItem.image}.jpg`} alt="product"/>
+							<img src={`/media/${productItem.image}.JPG`} alt="product"/>
 
 						</div>
 						<div className="details-info">

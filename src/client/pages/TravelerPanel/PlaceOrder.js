@@ -120,7 +120,7 @@ transactionSuccess() {
                         commandeItems.map(item =>
                           <li key={item.id}>
                             <div className="cart-image">
-                              <img src={`/media/${item.image}.jpg`} alt="product" />
+                              <img src={`/media/${item.image}.JPG`} alt="product" />
                             </div>
                             <div className="cart-name">
                               <div>
