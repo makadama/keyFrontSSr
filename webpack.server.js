@@ -51,7 +51,7 @@ module.exports = {
     
     plugins: [
         new CopyWebpackPlugin([
-            { from: 'src/client/assets/email_templates', to:  'public/media/email_templates' }
+            { from: 'src/client/assets/', to: 'public/media/' }
         ])
   ],
     // Tell webpack not to bundle any libraries that exist in the 'node_modules' folder
