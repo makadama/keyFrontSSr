@@ -52,7 +52,7 @@ class DisplayCommandePage extends Component{
       console.log(commandeItems);
       const {commande} = this.props.commande;
       console.log(commande);
-      const itemsPrice = commandeItems.reduce((a, c) => a + c.prix * c.quantite, 0);
+      const itemsPrice = commandeItems.reduce((a, c) => a + c.prix, 0);
       const totalPrice = itemsPrice + commande.taxe;
  	return(
  			<div >
