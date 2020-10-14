@@ -1,7 +1,7 @@
 
 .parisSection {
     height: 500px;
-   background-image: url("/client/assets/parisHeaderimg.jpg");
+   background-image: url("/media/parisHeaderimg.jpg");
    background-size: cover;
     background-position: center;
     text-align: center;
