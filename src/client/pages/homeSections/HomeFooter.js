@@ -19,13 +19,13 @@ class IndexFooter extends  Component{
                 <h3 className="titre text-center "> Nous découvrir </h3>
                 <ul className="decouverte">
                     <li>
-                      <a target="_blank" href=""> Qui sommes nous? </a>
+                      <a target="_blank" href="/a-propos"> Qui sommes nous? </a>
                     </li>
                     <li>
-                      <a target="_blank" href=""> Nous contacter </a>
+                      <a target="_blank" href="/contact"> Nous contacter </a>
                     </li>
                     <li> 
-                      <a target="_blank" href=""> FAQ </a>
+                      <a target="_blank" href="/faq"> FAQ </a>
                     </li>
                 </ul>
               </div>
@@ -45,7 +45,7 @@ class IndexFooter extends  Component{
                       <a target="_blank" href=""> Nos tarifs</a>
                     </li>
                     <li>
-                      <a target="_blank" href=""> Nos services </a>
+                      <a target="_blank" href="/services"> Nos services </a>
                     </li>
                     <li> 
                       <a target="_blank" href=""> Nos partenaire </a>

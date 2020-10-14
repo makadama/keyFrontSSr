@@ -20,7 +20,7 @@ class Home extends Component{
 render(){
 
   return (
-    <div data-test="homePageComponent"  style={{marginTop:'100px', marginBottom:'5px', height:'auto'}}>
+    <div data-test="homePageComponent"  style={{marginTop:'100px', marginBottom:'1px', height:'auto'}}>
       {this.head()}
      	<HomeHeader/>
      	<HomeAbout/>

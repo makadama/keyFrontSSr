@@ -1,7 +1,6 @@
 .homeSection{
     height: 500px;
-   
-    background-image: url("/media/homeHeaderimg.png");
+   background-image: url("/media/homeHeaderimg.png");
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -41,8 +40,7 @@
     line-height: 1.5;
     color: #273746;
     margin-bottom: 20px;
-    width: 550px;
-     text-align: center;
+    text-align: center;
  }
 
      
