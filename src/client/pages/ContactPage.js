@@ -238,11 +238,7 @@ class ContactPage extends Component {
     );
   }
 }
-ContactPage.propTypes = {
-  sendAnMessage: PropTypes.func.isRequired,
-  mail: PropTypes.object.isRequired,
-  errors: PropTypes.object.isRequired
-};
+
 
 const mapStateToProps = state => ({
   mail: state.mail,
