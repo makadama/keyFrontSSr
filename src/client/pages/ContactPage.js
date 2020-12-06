@@ -113,7 +113,6 @@ class ContactPage extends Component {
                               <option value="Lyon">Lyon</option>
                               <option value="Bordeau">Bordeau</option>
                               <option value="Marseille">Marseille</option>
-                              <option value="Monaco">Monaco</option>
                             </select>
                              <span className="red-text" style={{color:'red'}}>
                               {errors.bureau}  

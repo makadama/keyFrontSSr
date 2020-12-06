@@ -14,7 +14,7 @@ class Introducing extends Component {
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section_title mb-60">
-                        <h3>Qui sommes nous?</h3>
+                        <h3>Qui sommes-nous?</h3>
                         <div class="seperator"></div>
                     </div>
                 </div>

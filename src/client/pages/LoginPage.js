@@ -87,7 +87,7 @@ class LoginPage extends Component{
                     {errors.message ? <span className="alert alert-danger" style={{width:'auto'}}>{errors.message} </span>:''}
                 </p>
 	            <form noValidate onSubmit={this.onSubmit}>
-	              <h1 className="h3 mb-3 font-weight-normal">Se connecter</h1>
+	              <h1 className="h3 mb-3 font-weight-normal">Connexion</h1>
 	              	<div className="seperator2"></div>
 	              	<div className="form-group">
 	                <label htmlFor="email">Adresse email</label>
@@ -135,9 +135,9 @@ class LoginPage extends Component{
 
 	              <button
 	                type="submit"
-	                className="btn btn-lg btn-primary btn-block"
+	                className="btn btn-lg boutonLogin btn-block"
 	              >
-	                Login!
+	                Se connecter!
 	              </button>
 
               		<label>Pas de compte?

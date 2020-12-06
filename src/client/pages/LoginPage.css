@@ -1,3 +1,14 @@
 .loginPage h1{
 	color: #ed7e24;
 }
+
+.boutonLogin{
+	background-color: 	#00cccb;
+	color: white;
+}
+
+
+.boutonLogin:hover{
+	background-color: 	#00cccb;
+	color: white;
+}

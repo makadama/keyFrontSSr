@@ -8,7 +8,7 @@ import {persistStore} from 'redux-persist';
 
 export default req => {
   const axiosInstance = axios.create({
-    baseURL: 'https://ks-backend.herokuapp.com/',
+    baseURL: 'https://ks-backend.herokuapp.com/',   //ici
     headers: { cookie: req.get('cookie') || '' }
   });
 

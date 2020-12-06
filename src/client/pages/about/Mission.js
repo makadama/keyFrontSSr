@@ -23,7 +23,7 @@ class Mission extends Component {
 soient de simples particuliers ou bien de grandes entreprises - de conserver le
 côté “chaleureux/cozy” et “authentique” qui se perd trop souvent lorsqu’on délaisse la gestion de son “chez-soi” à une entreprise. </p>
                         <div class="mission_contact">
-                            <a href="/contact" class="boxed-btn large-width">Nous Contacter</a>
+                            <a href="/contact" class="boxed-btn ">Nous Contacter</a>
                         </div>
                     </div>
                 </div>

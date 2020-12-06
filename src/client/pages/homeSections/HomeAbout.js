@@ -11,7 +11,7 @@ class HomeAbout extends Component {
         	<div className="row justify-content-center">
         		
         		<div className="col-xs-12 col-md-10">
-        			<h2 className="titre2 text-center"> Qui somme Nous? </h2>
+        			<h2 className="titre2 text-center"> Qui somme-nous? </h2>
              
         			<p className="texte">KeyService est une plateforme qui vous
                permet de confier votre logement lorsque vous vous absentez de

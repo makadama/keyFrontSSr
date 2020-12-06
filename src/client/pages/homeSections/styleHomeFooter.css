@@ -29,9 +29,8 @@
 }
 
 .decouverte li {
-	
-	
 	margin-left: 28%;
+	padding-bottom: 10px;
 }
 
 .decouverte li a{
@@ -44,8 +43,8 @@
 }
 
 .aPropos li {
-	
 	margin-left: 38%;
+	padding-bottom: 10px;
 }
 
 .aPropos li a{
@@ -53,9 +52,9 @@
 }
 
 .social_footer_ul { 
-	display:table; 
-	margin:15px auto 0 auto; 
+	display: inline-flex; 
 	list-style-type:none; 
+	padding: 20px 20px;
 	 }
 
 .social_footer_ul li {
@@ -65,8 +64,8 @@
     }
 
 .social_footer_ul li a { 
-	color:#CCC;
-	 border:1px solid #CCC; 
+	color:#fff;
+	 border:1px solid #fff; 
 	 padding:8px;
 	 border-radius:50%;
 	}
@@ -76,3 +75,9 @@
 	 height:20px; 
 	 text-align:center;
 	}
+
+.footer-copyright a {
+	color: #000;
+	text-decoration: none;
+	background-color: transparent;
+} 

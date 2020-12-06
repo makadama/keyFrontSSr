@@ -47,8 +47,8 @@ render(){
     </ul>
   ) : (
     <ul className={this.state.isOpen? 'showNav': 'undif'}>
-      <li><a href="/connexion" className="btn btn_login">Se connecter</a></li>
-      <li><a href="/inscription" className="btn btn_register">S'inscrire</a></li>
+      <li><a href="/connexion" className="btn_login">Se connecter</a></li>
+      <li><a href="/inscription" className="btn_register">S'inscrire</a></li>
     </ul>
   );
 
@@ -57,6 +57,7 @@ render(){
     <div className="nvbr">
     <nav>
       <div className="logoBtn">
+      
       	<div className="logo">
       		 <a href="#"><img src={logo} alt=""/></a>
       	</div>

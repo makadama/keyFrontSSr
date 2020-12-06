@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { registerUser } from "../actions/authActions";
 import classnames from "classnames";
 import { Helmet } from "react-helmet";
-
+import "./registerPage.css";
 
 
 class RegisterPage extends Component{
@@ -84,7 +84,7 @@ class RegisterPage extends Component{
            <p className="text-center">
                     {errors.message ? <span className="alert alert-danger" style={{width:'auto'}}>{errors.message} </span>:''}
                 </p>
-              <h1 className="h3 mb-3 font-weight-normal">S'inscrire</h1>
+              <h1 className="h3 mb-3 font-weight-normal">Inscription</h1>
              <div className="seperator2"></div>
             <form noValidate onSubmit={this.onSubmit}>
 
@@ -219,9 +219,9 @@ class RegisterPage extends Component{
 
               <button
                 type="submit"
-                className="btn btn-lg btn-primary btn-block"
+                className="btn btn-lg boutonRegister btn-block"
               >
-                Register!
+                S'incrire!
               </button>
             </form>
           </div>

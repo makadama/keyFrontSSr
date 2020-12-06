@@ -15,7 +15,7 @@ const app = express();
 
 app.use(
   '/api',
-  proxy("https://ks-backend.herokuapp.com/"));
+  proxy("https://ks-backend.herokuapp.com/")); //ici
 
 app.use(express.static('public'));
 app.use(bodyParser.json());

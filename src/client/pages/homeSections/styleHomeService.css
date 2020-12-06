@@ -57,17 +57,21 @@
      font-weight:300;
       
 }
- .al-service-box .btn {
-     border-color: #00cccb;
-     background: #00cccb;
-     color: white;
+ .al-service-box .boutonService {
+    background-color: #00cccb;
+          border:  1px solid #00cccb;
+          text-decoration: none;
+          display: inline-block;
+          margin-left: 5px;
+          color: #fff;
+          padding: 10px 15px;
       
 }
-.al-service-box .btn:focus
+.al-service-box .boutonService:focus
 {
     box-shadow:none;
 }
- .al-service-box .btn:hover {
-     background:#1b7ae8;
-     color:#fff;
+ .al-service-box .boutonService:hover {
+     background:#fff;
+     color:#00cccb;
 }

@@ -4,28 +4,38 @@
 .coordonnees{
 	display: block;
 	height: auto;
+	padding: 0;
 
 }
 .townsData{
 	list-style: none;
 	display: block;
+	padding-left: 0;
 
 }
 .coordonnees .townItem{
 	font-size: 22px;
-	padding-top: 5px;
 	list-style: none;
 
 }
  
 .coordonnees .townItem .townsData li{
 	font-size: 15px;
-	margin: 0;
+	padding: 0;
 	list-style: none;
-
+	padding-bottom: 10px;
 }
 
 .coordonnees .townItem .townsData{
 	height: auto;
 }
 
+
+.townsData .fa{
+	margin-right: 5px;
+}
+
+
+.townsData .fas{
+	margin-right: 5px;
+}

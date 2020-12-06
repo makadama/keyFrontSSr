@@ -27,16 +27,11 @@
 }
 
 nav{
-		
-		
 		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 1000;
 		background-color: #fff;
-
-
-
 	}
 
 nav ul{
@@ -49,7 +44,7 @@ nav ul{
 }
 
 .showNav{
-	height: 182px;
+	height: 225px;
 }
 
 
@@ -78,18 +73,17 @@ nav ul li a:hover{
 		border: 1px solid #ed7e24;
 		color: #ed7e24;
 		display: inline-block;
-		padding: 5px 0;
+		
 
 
 	}
 
 	.btn_register{
 		background-color: #00cccb;
-		border:  solid;
+		border:  1px solid #00cccb;
 		text-decoration: none;
 		display: inline-block;
 		margin-left: 5px;
-		padding: 5px 0;
 		color: #fff;
 
 	}
@@ -159,16 +153,15 @@ nav ul li:hover ul{
 		border: 1px solid #ed7e24;
 		color: #ed7e24;
 		display: inline-block;
-		padding: 5px 0;
+		
 		
 	}
 .btn_register:hover{
 		background-color: #00cccb;
-		border:  solid;
+		border:  1px solid #00cccb;
 		text-decoration: none;
 		display: inline-block;
 		margin-left: 5px;
-		padding: 5px 0;
 		color: #fff;
 
 	}
