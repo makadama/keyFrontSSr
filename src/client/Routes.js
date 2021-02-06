@@ -44,6 +44,16 @@ import SuccessOrder from './pages/TravelerPanel/SuccessOrder';
 
 export default [
   {
+    path:'/',
+    exact: true,
+    ...App,
+      routes:[
+        {
+          ...HomePage
+        }
+      ]
+  },
+  {
     path:'/inscription',
     ...App,
     routes:[
@@ -275,17 +285,6 @@ export default [
     ]
   },
   {
-    path:'/',
-    exact: true,
-    ...App,
-      routes:[
-        {
-          ...HomePage
-        }
-      ]
-  },
-  {
-    path:'/',
     ...App,
     routes:[
         {
