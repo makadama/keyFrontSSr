@@ -10,7 +10,7 @@ export const fetchProduits = () => async(dispatch, getState, api) => {
   }catch(err){
     dispatch({
         type: GET_ERRORS,
-        payload: err
+        payload: err.response.data
       })
   }
  
@@ -45,7 +45,7 @@ export const getProduitById = produitId => async (dispatch, getState, api)=>{
 	catch(error){
 		dispatch({
         type: GET_ERRORS,
-        payload: error
+        payload: error.response.data
       })
 	}
 }

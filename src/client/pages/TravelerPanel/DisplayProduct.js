@@ -58,13 +58,15 @@ handleAddToCart(e){
 	render(){
 			const {id} = this.props.auth;
 			const productItem = this.props.product;
+			const {errors} =this.state;
+			console.log(errors)
 
 		return( 
 
 				<div className="container">
 					<div className="details">
 						<div className="details-image">
-							<img src={`/media/${productItem.image}.jpg`} alt="product"/>
+							<img src={`/media/${productItem.image}.JPG`} alt="product"/>
 
 						</div>
 						<div className="details-info">
@@ -73,7 +75,7 @@ handleAddToCart(e){
 									<h4>{productItem.titre}</h4>
 								</li>
 								<li>
-									prix: <b>{symbol.formatCurrency(productItem.prix)}</b>
+									prix: <b>{roductItem.prix}</b>
 								</li>
 								<li>
 									Description:
