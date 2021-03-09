@@ -258,7 +258,7 @@ export default [
           path:'/dashboardVoyageur/:idUser/commande/succes',
           ...SuccessOrder
         },
-        {
+       {
           path:'/dashboardVoyageur/:idUser/produits/:idProduct',
           ...DisplayProduct
         },

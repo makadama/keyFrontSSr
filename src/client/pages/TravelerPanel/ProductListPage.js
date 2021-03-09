@@ -13,8 +13,8 @@ class ProductListPage extends Component{
 	render(){
 
 		return( 
-			
-				<div className="container" data-test="productsPage">
+
+				<div className="container">
 				<h2> les paniers  key service </h2>
 				<p>commandez vos paniers! Keyservice vous les livrera dans les plus bref délais </p>
 				<hr/>
@@ -43,9 +43,9 @@ function loadData(store, idUser){
     store.dispatch( fetchProduits()),
     store.dispatch( getCommandeItem(idUser) ),
   ]); 
-  
+
 }
 export default {
 	loadData,
 	component: ProductListPage
-}
+} 

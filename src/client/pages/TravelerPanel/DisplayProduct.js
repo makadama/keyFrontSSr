@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import { getProduitById } from "../../actions/productActions";
 import { addCommandeItem } from "../../actions/commandeItemActions";
 import { connect } from "react-redux";
-
-import './displayProductStyle.css';
+import symbol from  '../../utils/symbol';
+import './StyleDisplayProduct.css';
 //import './styleProductList.css';
 
 
@@ -26,7 +26,7 @@ class DisplayProduct extends Component{
 		}
 
 		this.onChange=this.onChange.bind(this)
-		
+
 		}
 
 onChange (e){
@@ -34,8 +34,8 @@ onChange (e){
 		}
 
 
-componentDidMount(){
-			this.props.getProduitById(this.props.products.item.id)
+	componentDidMount(){
+			this.props.getProduitById(this.props.match.params.idProduct)
 	}
 
 handleAddToCart(e){
@@ -58,13 +58,13 @@ handleAddToCart(e){
 	render(){
 			const {id} = this.props.auth;
 			const productItem = this.props.product;
-			
+
 		return( 
-			
+
 				<div className="container">
 					<div className="details">
 						<div className="details-image">
-							<img src={`/media/${productItem.image}.JPG`} alt="product"/>
+							<img src={`/media/${productItem.image}.jpg`} alt="product"/>
 
 						</div>
 						<div className="details-info">
@@ -73,18 +73,18 @@ handleAddToCart(e){
 									<h4>{productItem.titre}</h4>
 								</li>
 								<li>
-									prix: <b>{productItem.prix}€</b>
+									prix: <b>{symbol.formatCurrency(productItem.prix)}</b>
 								</li>
 								<li>
 									Description:
 									<div>{productItem.description}</div>
 								</li>
-								
+
 							</ul>
 						</div>
 						<div className="details-action">
 							<ul>
-								
+
 								<li>
 									status:{' '}
 									{productItem.quantite > 0? 'En Stock': 'Indisponible'}
@@ -104,7 +104,7 @@ handleAddToCart(e){
                 				</li>
                 				 <li>
 				                  {productItem.quantite > 0 && (
-				                  	
+
 				                    <button 
 				                    	onClick={this.handleAddToCart.bind(this)}
 				                      className="button primary"
@@ -116,7 +116,7 @@ handleAddToCart(e){
 							</ul>
 						</div>
 					</div>	
-				
+
 				</div>
 			)
 	}
@@ -132,10 +132,11 @@ function mapStateToProps(state){
     };
 }
 
-/*function loadData(store, idProduct){
+function loadData(store, idProduct){
 
   return store.dispatch(getProduitById(idProduct));
-}*/
-export default {
-	component : connect (mapStateToProps, {getProduitById, addCommandeItem})(DisplayProduct)
 }
+export default {
+	loadData,
+	component : connect (mapStateToProps, {getProduitById, addCommandeItem})(DisplayProduct)
+} 
