@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import {fetchProduits} from "../../actions/productActions";
 import { addToCart } from "../../actions/cartActions";
 import requireAuth from '../../components/hocs/requireAuth';
-import symbol from  '../../utils/symbol';
+
 
 class Products extends Component{
 
@@ -33,7 +33,7 @@ class Products extends Component{
 		return(
 			<div className="row">
 					{productItems}
-				</div>
+			</div>
 			)
 	}
 }
