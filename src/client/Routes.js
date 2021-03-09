@@ -259,7 +259,7 @@ export default [
           ...SuccessOrder
         },
         {
-          path:'/dashboardVoyageur/:idUser/produits/:idPro',
+          path:'/dashboardVoyageur/:idUser/produits/:idProduct',
           ...DisplayProduct
         },
         {

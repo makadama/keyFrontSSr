@@ -35,7 +35,7 @@ onChange (e){
 
 
 componentDidMount(){
-			this.props.getProduitById(this.props.match.params.idPro)
+			this.props.getProduitById(this.props.products.item.id)
 	}
 
 handleAddToCart(e){
@@ -132,9 +132,9 @@ function mapStateToProps(state){
     };
 }
 
-function loadData(store, idPro){
+function loadData(store, idProduct){
 
-  return store.dispatch(getProduitById(idPro));
+  return store.dispatch(getProduitById(idProduct));
 }
 export default {
 	loadData,

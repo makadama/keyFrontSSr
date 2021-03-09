@@ -10,8 +10,10 @@ class Products extends Component{
 	componentDidMount(){
 		this.props.fetchProduits();
 	}
+
 	render(){
 			const {id} = this.props.auth;
+			console.log(this.props.products)
 			const productItems = this.props.products.map(product=>(
 			<div className="col-md-4 mt-2" key={product.id}>
 			<div className="thumbnail text-center">
