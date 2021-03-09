@@ -10,7 +10,7 @@ export const fetchProduits = () => async(dispatch, getState, api) => {
   }catch(err){
     dispatch({
         type: GET_ERRORS,
-        payload: err.response.data
+        payload: err
       })
   }
  
