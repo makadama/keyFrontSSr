@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { getProduitById } from "../../actions/productActions";
 import { addCommandeItem } from "../../actions/commandeItemActions";
 import { connect } from "react-redux";
-import symbol from  '../../utils/symbol';
+
 import './displayProductStyle.css';
 //import './styleProductList.css';
 
