@@ -53,7 +53,7 @@ function mapStateToProps(state){
 }
 
 
-}
+
 export default {
 	component : connect (mapStateToProps, {getProduitById, addCommandeItem})(DisplayProduct)
 } 
