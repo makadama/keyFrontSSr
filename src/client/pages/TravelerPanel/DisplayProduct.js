@@ -73,7 +73,7 @@ handleAddToCart(e){
 									<h4>{productItem.titre}</h4>
 								</li>
 								<li>
-									prix: <b>{symbol.formatCurrency(productItem.prix)}</b>
+									prix: <b>{productItem.prix} €</b>
 								</li>
 								<li>
 									Description:

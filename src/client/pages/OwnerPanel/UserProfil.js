@@ -165,7 +165,7 @@ onSubmitPassword(e){
                                   invalid: errors.email
                                 })}
                                 value={this.state.email}
-                                onChange={this.onChange} />  
+                                onChange={this.onChange} disabled />  
                               <span className="red-text" style={{color:'red'}}>
                                   {errors.email}  
                               </span>  
@@ -178,7 +178,7 @@ onSubmitPassword(e){
                                   invalid: errors.firstname
                                 })}
                                 value={this.state.firstname}
-                                onChange={this.onChange} disabled />  
+                                onChange={this.onChange} />  
                                  <span className="red-text" style={{color:'red'}}>
                                   {errors.firstname}  
                               </span>    

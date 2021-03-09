@@ -176,7 +176,7 @@ this.props.updateLogement(this.props.match.params.id, logementInfo)
                 </div>
                 <div className="card-body">
                     <form noValidate onSubmit={this.onSubmit}>
-                    <h1 className="h3 mb-3 font-weight-normal">Ajouter un bien</h1>
+                    <h1 className="h3 mb-3 font-weight-normal">Modifier le bien</h1>
                        
                             <div className="form-group">
                               <label htmlFor="fk_ville">Dans quelle ville se trouve votre bien?*</label>
@@ -184,7 +184,7 @@ this.props.updateLogement(this.props.match.params.id, logementInfo)
                                 invalid: errors.fk_ville
                                 })}
                                 value={this.state.fk_ville}
-                                onChange={this.onChange}  to="fk_ville" name="fk_ville">
+                                onChange={this.onChange}  to="fk_ville" name="fk_ville" disabled>
                               <option value=""></option>
                                 <option value="1">Paris et îles de  France</option>
                                 <option value="2">Lyon</option>
@@ -204,7 +204,7 @@ this.props.updateLogement(this.props.match.params.id, logementInfo)
                                 invalid: errors.adresse
                                 })}
                                 value={this.state.adresse}
-                                onChange={this.onChange}/>
+                                onChange={this.onChange} disabled/>
                                 <span className="red-text" style={{color:'red'}}>
                                     {errors.adresse}  
                                 </span>
@@ -223,7 +223,7 @@ this.props.updateLogement(this.props.match.params.id, logementInfo)
                                 invalid: errors.code_postal
                                 })}
                                 value={this.state.code_postal}
-                                onChange={this.onChange}/>
+                                onChange={this.onChange} disabled/>
                                 <span className="red-text" style={{color:'red'}}>
                                     {errors.code_postal}  
                                 </span>
@@ -236,7 +236,7 @@ this.props.updateLogement(this.props.match.params.id, logementInfo)
                                 })}
                                 value={this.state.type}
                                 onChange={this.onChange}  to="type" name="type">
-                              <option value=""></option>
+                                <option value=""></option>
                                 <option value="maison">Maison</option>
                                 <option value="appartement">Appartement</option>
                                 <option value="studio">Studio</option>
@@ -247,7 +247,7 @@ this.props.updateLogement(this.props.match.params.id, logementInfo)
                             </div>
 
                              <div class="form-group">
-                              <label htmlFor="code_postal">Superficie*</label>
+                              <label htmlFor="superficie">Superficie*</label>
                               <input type="text" name="superficie"  id="superficie" placeholder="superficie" className={classnames("form-control",{
                                 invalid: errors.superficie
                                 })}
@@ -295,7 +295,7 @@ this.props.updateLogement(this.props.match.params.id, logementInfo)
                               value={this.state.description}
                               onChange={this.onChange} name="description" id="description" rows="6" required></textarea>
                         </div>
-                      <button type="submit" class="btn btn-primary">Ajouter</button>
+                      <button type="submit" class="btn btn-primary">Mettre à jour</button>
 
                    
                   </form>

@@ -285,6 +285,7 @@ export default [
     ]
   },
   {
+    path:'/',
     ...App,
     routes:[
         {
