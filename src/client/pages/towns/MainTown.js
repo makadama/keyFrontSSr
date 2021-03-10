@@ -14,8 +14,10 @@ class  MainTown extends Component {
 <div class="townsSlider">      
 <div class="container  py-0 mt-0"> 
   <div class="py-5">
-    <h3 class="font-weight-bold mb-0 townsTitle">Les Villes de Keyservices en France</h3>
-    <div class="seperator"></div>
+     <div class="text-center">
+                      <h3 class="mb-3">les villes de keyservices</h3>
+                      <div class="seperator"></div>
+      </div>
     <div class="row mb-3 ">
      
       <div class="col-lg-6 mb-3 mb-lg-0">
