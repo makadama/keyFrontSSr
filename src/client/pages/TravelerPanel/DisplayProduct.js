@@ -56,8 +56,13 @@ function mapStateToProps(state){
     };
 }
 
+function loadData(store, idProduct){
+
+  return store.dispatch(getProduitById(idProduct));
+}
 
 
 export default {
+	loadData,
 	component : connect (mapStateToProps, {getProduitById, addCommandeItem})(DisplayProduct)
 } 
