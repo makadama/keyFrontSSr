@@ -29,9 +29,13 @@ class DisplayProduct extends Component{
 		}
 
 
-	
+	componentDidMount(){
+			this.props.getProduitById(this.props.match.params.idProduct)
+	}
+
 	render(){
-			
+			const productItem = this.props.product;
+			console.log(productItem);
 
 		return( 
 
