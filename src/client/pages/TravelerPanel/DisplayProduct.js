@@ -36,11 +36,37 @@ class DisplayProduct extends Component{
 	render(){
 			const productItem = this.props.product;
 			console.log(productItem);
+			const {id} = this.props.auth;
+			
+			
 
 		return( 
 
 				<div className="container">
-					   the display container
+					   <div className="details">
+						<div className="details-image">
+							<img src={`/media/${productItem.image}.JPG`} alt="product"/>
+
+						</div>
+						<div className="details-info">
+							<ul>
+								<li>
+									<h4>{productItem.titre}</h4>
+								</li>
+								<li>
+									prix: <b>{roductItem.prix}</b>
+								</li>
+								<li>
+									Description:
+									<div>{productItem.description}</div>
+								</li>
+
+							</ul>
+						</div>
+						<div className="details-action">
+							
+						</div>
+					</div>
 				</div>
 			)
 	}
