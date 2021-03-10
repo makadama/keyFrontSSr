@@ -44,10 +44,7 @@ class DisplayProduct extends Component{
 
 				<div className="container">
 					   <div className="details">
-						<div className="details-image">
-							<img src={`/media/${productItem.image}.JPG`} alt="product"/>
-
-						</div>
+					
 						<div className="details-info">
 							<ul>
 								<li>
@@ -63,9 +60,7 @@ class DisplayProduct extends Component{
 
 							</ul>
 						</div>
-						<div className="details-action">
-							
-						</div>
+						
 					</div>
 				</div>
 			)
