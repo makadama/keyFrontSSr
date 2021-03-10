@@ -59,7 +59,7 @@ render(){
       <div className="logoBtn">
       
       	<div className="logo">
-      		 <a href="#"><img src={logo} alt=""/></a>
+      		 <a href="/"><img src={logo} alt=""/></a>
       	</div>
         <div className="btn bouton" onClick={this.handleClick}>
         	<div className="bar"></div>
