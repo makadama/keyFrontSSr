@@ -14,9 +14,9 @@ class ServicesHeader extends Component {
                    
                     <h4 className="servicesInfo">Nos Services</h4>
                     <p className="servicesDesc">
-                        KeyService gère tout pour vous
+                        KeyServices gère tout pour vous
                     </p>
-                    <a href="#" class="boxed-btn2">Devenir hôte</a>
+                    <a href="/contact" class="boxed-btn2">Nous contacter</a>
                 </div>
             </div>
         </div>

@@ -126,9 +126,9 @@ class ContactPage extends Component {
                             value={this.state.mailSubject}
                             onChange={this.onChange} id="mailSubject" name="mailSubject">
                               <option value=""></option>
-                              <option value="renseignement">Je suis intéressé par les service de Key Service</option>
-                              <option value="voyageur">Je séjourne dans un logement de Key Service</option>
-                              <option value="hôte">Je suis un client de  Key Service</option>
+                              <option value="renseignement">Je suis intéressé par les service de Keyservices</option>
+                              <option value="voyageur">Je séjourne dans un logement de Keyservices</option>
+                              <option value="hôte">Je suis un client de  Keyservices</option>
                               <option value="autre">Autre</option>
                             </select>
                             <span className="red-text" style={{color:'red'}}>
@@ -181,7 +181,7 @@ class ContactPage extends Component {
                           </span>
                         </div>
                         <div className="mx-auto">
-                        <button type="submit" className="btn btn-primary text-right">Envoyer</button></div>
+                        <button type="submit" className="btn btn-primary boutonContact text-right">Envoyer</button></div>
                     </form>
                 </div>
             </div>
@@ -195,7 +195,7 @@ class ContactPage extends Component {
                           Paris
                           <ul className="townsData">
                               <li><i className="fa fa-home"></i>18 avenue de Villiers 75017 Paris </li>
-                              <li><i className="fas fa-envelope"></i> keyservicedeparis@keyservice.com </li>
+                              <li><i className="fas fa-envelope"></i> keyservicesdeparis@keyservices.com </li>
                               <li><i className="fas fa-phone-alt"></i> 2004039878 </li>
                           </ul>
                       </li>
@@ -203,7 +203,7 @@ class ContactPage extends Component {
                           Lyon
                           <ul className="townsData">
                               <li><i className="fa fa-home"></i>18 Rue de la République 69002 Lyon </li>
-                              <li><i className="fas fa-envelope"></i> keyservicedelyon@keyservice.com </li>
+                              <li><i className="fas fa-envelope"></i> keyservicesdelyon@keyservices.com </li>
                               <li><i className="fas fa-phone-alt"></i> 789520244522 </li>
                           </ul>
                       </li>
@@ -211,7 +211,7 @@ class ContactPage extends Component {
                           Bordeaux
                           <ul className="townsData">
                               <li><i className="fa fa-home"></i> 1 rue du 11 Novembre 1918 Bordeaux </li>
-                              <li><i className="fas fa-envelope"></i> keyservicedebordeaux@keyservice.com </li>
+                              <li><i className="fas fa-envelope"></i> keyservicesdebordeaux@keyservices.com </li>
                               <li><i className="fas fa-phone-alt"></i> 952526332478 </li>
                           </ul>
                       </li>
@@ -219,7 +219,7 @@ class ContactPage extends Component {
                           Marseille
                           <ul className="townsData">
                               <li><i className="fa fa-home"></i> 3 rue du Panier 13013 Marseille </li>
-                              <li><i className="fas fa-envelope"></i> keyservicedemarseille@keyservice.com </li>
+                              <li><i className="fas fa-envelope"></i> keyservicesdemarseille@keyservices.com </li>
                               <li><i className="fas fa-phone-alt"></i> 7894561239</li>
                           </ul>
                       </li>

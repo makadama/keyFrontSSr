@@ -1,7 +1,7 @@
 .townSection{
     height: 500px;
     /*background: url(https://viewthevibe.com/wp-content/uploads/2014/09/Travel-Smart.jpg);*/
-    background-image: url("/media/townHeaderimg.jpg");
+    background-image: url("/media/citiesImg.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -48,7 +48,7 @@
      
 
 
-.townBtn{
+/*.townBtn{
     background: #00cccb;
     color: #fff;
     font-size: 18px;
@@ -66,5 +66,8 @@
     color: #eb5424;
      text-decoration: none;
    
-}
+}*/
+.townSection .boxed-btn2{background:transparent;color:#ed7e24;display:inline-block;padding:18px 24px;font-family:"Roboto",sans-serif;font-size:14px;font-weight:800;border:0;border:2px solid #ed7e24;letter-spacing:2px;text-transform:uppercase}.boxed-btn2:hover{background:#fff;color:#ed7e24; text-decoration: none !important}.boxed-btn2:focus{outline:none}
+
+
    

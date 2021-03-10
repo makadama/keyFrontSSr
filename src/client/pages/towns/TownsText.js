@@ -28,7 +28,7 @@ class TownsText extends Component {
 
         	<div className="row justify-content-center">
             <div className="col-3 text-center">
-        			<button type="button" className="btnsTowns">Nous Contacter</button>
+        			<a href="/a-propos" className="btnContact">A propos</a>
             </div>
         	</div>
 

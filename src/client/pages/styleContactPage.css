@@ -39,3 +39,14 @@
 .townsData .fas{
 	margin-right: 5px;
 }
+
+
+.boutonContact{
+	background-color: 	#00cccb;
+	color: #fff;
+}
+
+.boutonContact:hover{
+	background-color: 	#00cccb;
+	color: #fff;
+}
