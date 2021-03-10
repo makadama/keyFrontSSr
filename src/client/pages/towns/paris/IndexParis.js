@@ -18,7 +18,7 @@ class IndexParis extends Component  {
     }
     render(){
 	return(
-        <div style={{marginTop:'100px', marginBottom:'1px', height:'auto'}}>
+        <div style={{marginTop:'100px', marginBottom:'1px', height:'auto', width:'auto'}}>
         {this.head()}
           <ParisHeader/>  
           <PourquoiParis/> 
