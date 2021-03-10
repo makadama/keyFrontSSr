@@ -18,7 +18,7 @@ class IndexMarseille extends Component  {
     }
     render(){
 	return(
-        <div>
+        <div style={{marginTop:'100px', marginBottom:'1px', height:'auto'}}>
         {this.head()}
           <MarseilleHeader/>
           <PourquoiMarseille/>
