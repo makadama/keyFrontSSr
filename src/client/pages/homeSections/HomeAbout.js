@@ -35,7 +35,7 @@ class HomeAbout extends Component {
 		              		
 		            	
 		            	
-		            	<p className="name text-center">10000 Voyageurs satisfaits </p>
+		            	<p className="name text-center">5000 Voyageurs satisfaits </p>
           			</div>
 
           			<div className="col-xs-12 col-md-4">
@@ -45,7 +45,7 @@ class HomeAbout extends Component {
 		              	
 		            	
 		            	
-		            	<p className="name text-center">300 logements confiés</p>
+		            	<p className="name text-center">200 logements confiés</p>
           			</div>
 
           			<div className="col-xs-12 col-md-4">

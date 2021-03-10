@@ -314,3 +314,7 @@
 .linkTarif:hover{
   text-decoration: none;
 }
+
+.green-tick .listItem{
+    list-style: none;
+}

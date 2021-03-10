@@ -32,32 +32,26 @@ class IndexFooter extends  Component{
                <div className="col-md-4 colonne  text-center">
                 <h3> Nous suivre </h3>
                 <ul class="social_footer_ul">
-                    <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 </ul>
               </div>
                <div className="col-md-4 colonne md-0">
                 <h3 className="text-center "> A propos</h3>
                 <ul className="aPropos">
                     <li>
-                      <a target="_blank" href=""> Nos tarifs</a>
-                    </li>
-                    <li>
                       <a target="_blank" href="/services"> Nos services </a>
                     </li>
                     <li> 
-                      <a target="_blank" href=""> Nos partenaire </a>
-                    </li>
-                    <li> 
-                      <a target="_blank" href=""> Devenir notre concierge </a>
+                      <a target="_blank" href="/villes"> Devenir notre concierge </a>
                     </li>
                 </ul>
               </div>
             </div>
             <div className="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://keyservice.com/"> keyservice.com</a>
+    <a href="#"> f2i-cw22-ams.fr</a>
   </div>
           
 </div>

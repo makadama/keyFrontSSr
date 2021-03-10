@@ -13,7 +13,7 @@ class Home extends Component{
   head(){
     return(
       <Helmet>
-          <title>Accueil - Keyservice Conciergerie</title>  
+          <title>Accueil - Keyservices Conciergerie</title>  
       </Helmet>
       );
   }
