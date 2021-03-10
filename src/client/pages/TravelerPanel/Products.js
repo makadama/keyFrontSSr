@@ -18,7 +18,7 @@ class Products extends Component{
 				<a style={{textDecoration:'none'}} href={`/dashboardVoyageur/${id}/produits/${product.id}`}>
 					<img style={{width:'200px', height:'150px'}} src={`/media/${product.image}.JPG`} alt={product.titre}/>
 					<p style={{color:'orange', fontSize: '1.3em'}}>
-					<b style={{color:'black'}}>{product.prix}</b>
+					<b style={{color:'black'}}>{product.prix}€</b>
 						{product.titre}
 					</p>
 

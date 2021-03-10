@@ -22,7 +22,7 @@ class DisplayCommandePage extends Component{
     placeOrderHandler(e){
       e.preventDefault();
       
-       const itemsPrix = this.props.commandeItems.commandeItems.reduce((a, c) => a + c.prix * c.quantite, 0);
+       const itemsPrix = this.props.commandeItems.commandeItems.reduce((a, c) => a + c.prixUnitaire * c.quantite, 0);
        const taxes = this.props.commande.commande.taxe;
       const totalPrice2 = itemsPrix + taxes;
        this.props.updateByTotal(this.props.match.params.idCommande, totalPrice2).then(()=>{
